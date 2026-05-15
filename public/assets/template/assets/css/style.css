@@ -2135,6 +2135,7 @@ input {
   -webkit-transition-delay: 0.5s;
   -o-transition-delay: 0.5s;
   transition-delay: 0.5s;
+  display: none;
 }
 
 @-webkit-keyframes loading {
