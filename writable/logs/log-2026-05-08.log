@@ -1,0 +1,1528 @@
+INFO - 2026-05-08 09:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 09:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 09:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 09:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 09:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 09:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 09:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 09:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 09:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 09:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 09:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 09:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 09:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:00:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 10:19:03 --> ErrorException: Undefined array key "size_name"
+in APPPATH\Controllers\admin\productmanagementController.php on line 167.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "size_name"', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 10:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 10:19:15 --> ErrorException: Undefined array key "width"
+in APPPATH\Controllers\admin\productmanagementController.php on line 168.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "width"', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 168)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 10:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 10:20:17 --> ParseError: syntax error, unexpected token "echo", expecting "]"
+in APPPATH\Controllers\admin\productmanagementController.php on line 167.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin\\productmanagementController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin\\productmanagementController')
+ 4 SYSTEMPATH\CodeIgniter.php(901): class_exists('\\App\\Controllers\\admin\\productmanagementController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 10:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 10:20:46 --> ErrorException: Undefined array key "name"
+in APPPATH\Controllers\admin\productmanagementController.php on line 165.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 165)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 10:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 10:21:04 --> ErrorException: Trying to access array offset on value of type int
+in APPPATH\Controllers\admin\productmanagementController.php on line 165.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 165)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 10:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 10:21:37 --> ErrorException: Undefined array key "name"
+in APPPATH\Controllers\admin\productmanagementController.php on line 165.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 165)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 10:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 10:21:59 --> ErrorException: Trying to access array offset on value of type int
+in APPPATH\Controllers\admin\productmanagementController.php on line 165.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 165)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 10:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 10:22:15 --> ErrorException: Attempt to read property "name" on array
+in APPPATH\Controllers\admin\productmanagementController.php on line 165.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 165)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 10:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 10:23:00 --> ErrorException: Undefined array key "name"
+in APPPATH\Controllers\admin\productmanagementController.php on line 165.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 165)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 10:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 10:23:45 --> ErrorException: Undefined array key 0
+in APPPATH\Controllers\admin\productmanagementController.php on line 165.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 165)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 10:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 10:23:56 --> ErrorException: Undefined array key 0
+in APPPATH\Controllers\admin\productmanagementController.php on line 165.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 165)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 10:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 10:24:37 --> ErrorException: Undefined array key "name"
+in APPPATH\Controllers\admin\productmanagementController.php on line 165.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 165)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 10:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 10:26:39 --> TypeError: Cannot access offset of type string on string
+in APPPATH\Controllers\admin\productmanagementController.php on line 165.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 10:27:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:31:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 10:33:44 --> ErrorException: Undefined array key "name"
+in APPPATH\Controllers\admin\productmanagementController.php on line 166.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 166)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 10:34:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:37:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:38:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 10:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:35:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:37:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:46:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:53:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:53:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 14:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:15:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:15:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 15:15:55 --> CodeIgniter\Validation\Exceptions\ValidationException: "Width is required" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 336.
+ 1 SYSTEMPATH\Validation\Validation.php(336): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Width is required')
+ 2 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('size_width_0', 'size_width_0', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\admin\productmanagementController.php(191): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 15:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:22:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 15:49:16 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\admin\productmanagementController.php on line 197.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(197): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 197)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 15:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 15:51:20 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\admin\productmanagementController.php on line 173.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 173)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 15:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 15:52:37 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\admin\productmanagementController.php on line 246.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(246): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 246)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 15:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:56:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 15:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 16:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 16:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 16:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 16:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 16:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 16:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 16:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 16:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 16:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 16:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 16:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 16:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 16:31:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 16:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 16:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 16:35:00 --> TypeError: CodeIgniter\Model::doProtectFieldsForInsert(): Argument #1 ($row) must be of type array, int given, called in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php on line 904
+in SYSTEMPATH\Model.php on line 764.
+ 1 SYSTEMPATH\BaseModel.php(904): CodeIgniter\Model->doProtectFieldsForInsert(7)
+ 2 APPPATH\Controllers\admin\productmanagementController.php(342): CodeIgniter\BaseModel->insertBatch([...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 16:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 16:35:07 --> TypeError: CodeIgniter\Model::doProtectFieldsForInsert(): Argument #1 ($row) must be of type array, int given, called in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php on line 904
+in SYSTEMPATH\Model.php on line 764.
+ 1 SYSTEMPATH\BaseModel.php(904): CodeIgniter\Model->doProtectFieldsForInsert(8)
+ 2 APPPATH\Controllers\admin\productmanagementController.php(342): CodeIgniter\BaseModel->insertBatch([...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 16:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 16:39:35 --> TypeError: CodeIgniter\Model::doProtectFieldsForInsert(): Argument #1 ($row) must be of type array, int given, called in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php on line 904
+in SYSTEMPATH\Model.php on line 764.
+ 1 SYSTEMPATH\BaseModel.php(904): CodeIgniter\Model->doProtectFieldsForInsert(9)
+ 2 APPPATH\Controllers\admin\productmanagementController.php(342): CodeIgniter\BaseModel->insertBatch([...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 16:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 16:40:12 --> TypeError: CodeIgniter\Model::doProtectFieldsForInsert(): Argument #1 ($row) must be of type array, int given, called in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php on line 904
+in SYSTEMPATH\Model.php on line 764.
+ 1 SYSTEMPATH\BaseModel.php(904): CodeIgniter\Model->doProtectFieldsForInsert(10)
+ 2 APPPATH\Controllers\admin\productmanagementController.php(343): CodeIgniter\BaseModel->insertBatch([...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 16:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 16:41:00 --> TypeError: CodeIgniter\Model::doProtectFieldsForInsert(): Argument #1 ($row) must be of type array, string given, called in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php on line 904
+in SYSTEMPATH\Model.php on line 764.
+ 1 SYSTEMPATH\BaseModel.php(904): CodeIgniter\Model->doProtectFieldsForInsert('http://localhost/neo/uploads/products/1778138787_69fc3ea37cbfd.webp')
+ 2 APPPATH\Controllers\admin\productmanagementController.php(353): CodeIgniter\BaseModel->insertBatch([...])
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 16:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 16:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 16:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-08 16:44:16 --> mysqli_sql_exception: Unknown column 'price' in 'field list' in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php(922): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\xamp\htdocs\neo\app\Controllers\admin\productmanagementController.php(350): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+#9 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+#10 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamp\htdocs\neo\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-05-08 16:44:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'price' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `price`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:44:16\',\'36\',\'1\',\'13000\',\'2026-05-08 16:44:16\',\'34\'), (\'2026-05-08 16:44:16\',\'48\',\'1\',\'19500\',\'2026-05-08 16:44:16\',\'42\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\admin\productmanagementController.php(350): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 16:44:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'price' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `price`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:44:16\',\'36\',\'1\',\'13000\',\'2026-05-08 16:44:16\',\'34\'), (\'2026-05-08 16:44:16\',\'48\',\'1\',\'19500\',\'2026-05-08 16:44:16\',\'42\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `price`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:44:16\',\'36\',\'1\',\'13000\',\'2026-05-08 16:44:16\',\'34\'), (\'2026-05-08 16:44:16\',\'48\',\'1\',\'19500\',\'2026-05-08 16:44:16\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `price`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:44:16\',\'36\',\'1\',\'13000\',\'2026-05-08 16:44:16\',\'34\'), (\'2026-05-08 16:44:16\',\'48\',\'1\',\'19500\',\'2026-05-08 16:44:16\',\'42\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\admin\productmanagementController.php(350): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 16:44:16 --> [Caused by] mysqli_sql_exception: Unknown column 'price' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `price`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:44:16\',\'36\',\'1\',\'13000\',\'2026-05-08 16:44:16\',\'34\'), (\'2026-05-08 16:44:16\',\'48\',\'1\',\'19500\',\'2026-05-08 16:44:16\',\'42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `price`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:44:16\',\'36\',\'1\',\'13000\',\'2026-05-08 16:44:16\',\'34\'), (\'2026-05-08 16:44:16\',\'48\',\'1\',\'19500\',\'2026-05-08 16:44:16\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `price`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:44:16\',\'36\',\'1\',\'13000\',\'2026-05-08 16:44:16\',\'34\'), (\'2026-05-08 16:44:16\',\'48\',\'1\',\'19500\',\'2026-05-08 16:44:16\',\'42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `price`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:44:16\',\'36\',\'1\',\'13000\',\'2026-05-08 16:44:16\',\'34\'), (\'2026-05-08 16:44:16\',\'48\',\'1\',\'19500\',\'2026-05-08 16:44:16\',\'42\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\admin\productmanagementController.php(350): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 16:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-08 16:45:34 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE) in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php(922): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\xamp\htdocs\neo\app\Controllers\admin\productmanagementController.php(350): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+#9 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+#10 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamp\htdocs\neo\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-05-08 16:45:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:45:34\',\'36\',\'1\',\'2026-05-08 16:45:34\',\'34\'), (\'2026-05-08 16:45:34\',\'48\',\'1\',\'2026-05-08 16:45:34\',\'42\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\admin\productmanagementController.php(350): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 16:45:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:45:34\',\'36\',\'1\',\'2026-05-08 16:45:34\',\'34\'), (\'2026-05-08 16:45:34\',\'48\',\'1\',\'2026-05-08 16:45:34\',\'42\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:45:34\',\'36\',\'1\',\'2026-05-08 16:45:34\',\'34\'), (\'2026-05-08 16:45:34\',\'48\',\'1\',\'2026-05-08 16:45:34\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:45:34\',\'36\',\'1\',\'2026-05-08 16:45:34\',\'34\'), (\'2026-05-08 16:45:34\',\'48\',\'1\',\'2026-05-08 16:45:34\',\'42\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\admin\productmanagementController.php(350): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 16:45:34 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:45:34\',\'36\',\'1\',\'2026-05-08 16:45:34\',\'34\'), (\'2026-05-08 16:45:34\',\'48\',\'1\',\'2026-05-08 16:45:34\',\'42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:45:34\',\'36\',\'1\',\'2026-05-08 16:45:34\',\'34\'), (\'2026-05-08 16:45:34\',\'48\',\'1\',\'2026-05-08 16:45:34\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:45:34\',\'36\',\'1\',\'2026-05-08 16:45:34\',\'34\'), (\'2026-05-08 16:45:34\',\'48\',\'1\',\'2026-05-08 16:45:34\',\'42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:45:34\',\'36\',\'1\',\'2026-05-08 16:45:34\',\'34\'), (\'2026-05-08 16:45:34\',\'48\',\'1\',\'2026-05-08 16:45:34\',\'42\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\admin\productmanagementController.php(350): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 16:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-08 16:49:21 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE) in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php(922): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\xamp\htdocs\neo\app\Controllers\admin\productmanagementController.php(350): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+#9 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+#10 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamp\htdocs\neo\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-05-08 16:49:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:49:21\',\'36\',\'1\',\'2026-05-08 16:49:21\',\'34\'), (\'2026-05-08 16:49:21\',\'48\',\'1\',\'2026-05-08 16:49:21\',\'42\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\admin\productmanagementController.php(350): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 16:49:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:49:21\',\'36\',\'1\',\'2026-05-08 16:49:21\',\'34\'), (\'2026-05-08 16:49:21\',\'48\',\'1\',\'2026-05-08 16:49:21\',\'42\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:49:21\',\'36\',\'1\',\'2026-05-08 16:49:21\',\'34\'), (\'2026-05-08 16:49:21\',\'48\',\'1\',\'2026-05-08 16:49:21\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:49:21\',\'36\',\'1\',\'2026-05-08 16:49:21\',\'34\'), (\'2026-05-08 16:49:21\',\'48\',\'1\',\'2026-05-08 16:49:21\',\'42\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\admin\productmanagementController.php(350): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 16:49:21 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:49:21\',\'36\',\'1\',\'2026-05-08 16:49:21\',\'34\'), (\'2026-05-08 16:49:21\',\'48\',\'1\',\'2026-05-08 16:49:21\',\'42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:49:21\',\'36\',\'1\',\'2026-05-08 16:49:21\',\'34\'), (\'2026-05-08 16:49:21\',\'48\',\'1\',\'2026-05-08 16:49:21\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:49:21\',\'36\',\'1\',\'2026-05-08 16:49:21\',\'34\'), (\'2026-05-08 16:49:21\',\'48\',\'1\',\'2026-05-08 16:49:21\',\'42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:49:21\',\'36\',\'1\',\'2026-05-08 16:49:21\',\'34\'), (\'2026-05-08 16:49:21\',\'48\',\'1\',\'2026-05-08 16:49:21\',\'42\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\admin\productmanagementController.php(350): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 16:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-08 16:52:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE) in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php(922): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\xamp\htdocs\neo\app\Controllers\admin\productmanagementController.php(353): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+#9 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+#10 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamp\htdocs\neo\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-05-08 16:52:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:52:46\',\'36\',\'1\',\'2026-05-08 16:52:46\',\'34\'), (\'2026-05-08 16:52:46\',\'48\',\'1\',\'2026-05-08 16:52:46\',\'42\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\admin\productmanagementController.php(353): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 16:52:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:52:46\',\'36\',\'1\',\'2026-05-08 16:52:46\',\'34\'), (\'2026-05-08 16:52:46\',\'48\',\'1\',\'2026-05-08 16:52:46\',\'42\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:52:46\',\'36\',\'1\',\'2026-05-08 16:52:46\',\'34\'), (\'2026-05-08 16:52:46\',\'48\',\'1\',\'2026-05-08 16:52:46\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:52:46\',\'36\',\'1\',\'2026-05-08 16:52:46\',\'34\'), (\'2026-05-08 16:52:46\',\'48\',\'1\',\'2026-05-08 16:52:46\',\'42\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\admin\productmanagementController.php(353): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 16:52:46 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:52:46\',\'36\',\'1\',\'2026-05-08 16:52:46\',\'34\'), (\'2026-05-08 16:52:46\',\'48\',\'1\',\'2026-05-08 16:52:46\',\'42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:52:46\',\'36\',\'1\',\'2026-05-08 16:52:46\',\'34\'), (\'2026-05-08 16:52:46\',\'48\',\'1\',\'2026-05-08 16:52:46\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:52:46\',\'36\',\'1\',\'2026-05-08 16:52:46\',\'34\'), (\'2026-05-08 16:52:46\',\'48\',\'1\',\'2026-05-08 16:52:46\',\'42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:52:46\',\'36\',\'1\',\'2026-05-08 16:52:46\',\'34\'), (\'2026-05-08 16:52:46\',\'48\',\'1\',\'2026-05-08 16:52:46\',\'42\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\admin\productmanagementController.php(353): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 16:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 16:54:54 --> ErrorException: Undefined property: App\Controllers\admin\ProductmanagementController::$db
+in APPPATH\Controllers\admin\productmanagementController.php on line 339.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\admin\\ProductmanagementController::$db', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 339)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 16:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 16:56:42 --> ErrorException: Undefined property: App\Controllers\admin\ProductmanagementController::$db
+in APPPATH\Controllers\admin\productmanagementController.php on line 339.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\admin\\ProductmanagementController::$db', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 339)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 16:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-08 16:58:38 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE) in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php(922): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\xamp\htdocs\neo\app\Controllers\admin\productmanagementController.php(353): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+#9 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+#10 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamp\htdocs\neo\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-05-08 16:58:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:58:38\',\'36\',\'1\',\'2026-05-08 16:58:38\',\'34\'), (\'2026-05-08 16:58:38\',\'48\',\'1\',\'2026-05-08 16:58:38\',\'42\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\admin\productmanagementController.php(353): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 16:58:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:58:38\',\'36\',\'1\',\'2026-05-08 16:58:38\',\'34\'), (\'2026-05-08 16:58:38\',\'48\',\'1\',\'2026-05-08 16:58:38\',\'42\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:58:38\',\'36\',\'1\',\'2026-05-08 16:58:38\',\'34\'), (\'2026-05-08 16:58:38\',\'48\',\'1\',\'2026-05-08 16:58:38\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:58:38\',\'36\',\'1\',\'2026-05-08 16:58:38\',\'34\'), (\'2026-05-08 16:58:38\',\'48\',\'1\',\'2026-05-08 16:58:38\',\'42\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\admin\productmanagementController.php(353): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 16:58:38 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:58:38\',\'36\',\'1\',\'2026-05-08 16:58:38\',\'34\'), (\'2026-05-08 16:58:38\',\'48\',\'1\',\'2026-05-08 16:58:38\',\'42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:58:38\',\'36\',\'1\',\'2026-05-08 16:58:38\',\'34\'), (\'2026-05-08 16:58:38\',\'48\',\'1\',\'2026-05-08 16:58:38\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:58:38\',\'36\',\'1\',\'2026-05-08 16:58:38\',\'34\'), (\'2026-05-08 16:58:38\',\'48\',\'1\',\'2026-05-08 16:58:38\',\'42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 16:58:38\',\'36\',\'1\',\'2026-05-08 16:58:38\',\'34\'), (\'2026-05-08 16:58:38\',\'48\',\'1\',\'2026-05-08 16:58:38\',\'42\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\admin\productmanagementController.php(353): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 16:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-08 17:01:56 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_addons`, CONSTRAINT `product_addons_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE) in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php(922): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\xamp\htdocs\neo\app\Controllers\admin\productmanagementController.php(347): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+#9 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+#10 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamp\htdocs\neo\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-05-08 17:01:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_addons`, CONSTRAINT `product_addons_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\admin\productmanagementController.php(347): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:01:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_addons`, CONSTRAINT `product_addons_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\admin\productmanagementController.php(347): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:01:56 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_addons`, CONSTRAINT `product_addons_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\admin\productmanagementController.php(347): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 17:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-08 17:02:25 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_addons`, CONSTRAINT `product_addons_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE) in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php(922): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\xamp\htdocs\neo\app\Controllers\admin\productmanagementController.php(347): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+#9 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+#10 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamp\htdocs\neo\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-05-08 17:02:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_addons`, CONSTRAINT `product_addons_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\admin\productmanagementController.php(347): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:02:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_addons`, CONSTRAINT `product_addons_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\admin\productmanagementController.php(347): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:02:25 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_addons`, CONSTRAINT `product_addons_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\admin\productmanagementController.php(347): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 17:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-08 17:03:03 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_addons`, CONSTRAINT `product_addons_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE) in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php(922): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\xamp\htdocs\neo\app\Controllers\admin\productmanagementController.php(347): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+#9 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+#10 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamp\htdocs\neo\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-05-08 17:03:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_addons`, CONSTRAINT `product_addons_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\admin\productmanagementController.php(347): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:03:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_addons`, CONSTRAINT `product_addons_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\admin\productmanagementController.php(347): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:03:03 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_addons`, CONSTRAINT `product_addons_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\admin\productmanagementController.php(347): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 17:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-08 17:03:34 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_addons`, CONSTRAINT `product_addons_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE) in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php(922): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\xamp\htdocs\neo\app\Controllers\admin\productmanagementController.php(347): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+#9 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+#10 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamp\htdocs\neo\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-05-08 17:03:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_addons`, CONSTRAINT `product_addons_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\admin\productmanagementController.php(347): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:03:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_addons`, CONSTRAINT `product_addons_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\admin\productmanagementController.php(347): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:03:34 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_addons`, CONSTRAINT `product_addons_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_addons` (`addon_name`, `addon_price`, `product_id`)
+VALUES (\'IP67 Rated Waterproof Tech\',\'3000\',12), (\'Smart Wireless Controller\',\'2000\',12)', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\admin\productmanagementController.php(347): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 17:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 17:05:34 --> TypeError: Cannot access offset of type string on string
+in APPPATH\Controllers\admin\productmanagementController.php on line 360.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 17:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 17:06:23 --> TypeError: Cannot access offset of type string on string
+in APPPATH\Controllers\admin\productmanagementController.php on line 360.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 17:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-08 17:07:10 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE) in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php(922): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\xamp\htdocs\neo\app\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+#9 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+#10 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamp\htdocs\neo\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-05-08 17:07:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:07:10\',\'36\',\'1\',\'2026-05-08 17:07:10\',\'34\'), (\'2026-05-08 17:07:10\',\'48\',\'1\',\'2026-05-08 17:07:10\',\'42\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:07:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:07:10\',\'36\',\'1\',\'2026-05-08 17:07:10\',\'34\'), (\'2026-05-08 17:07:10\',\'48\',\'1\',\'2026-05-08 17:07:10\',\'42\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:07:10\',\'36\',\'1\',\'2026-05-08 17:07:10\',\'34\'), (\'2026-05-08 17:07:10\',\'48\',\'1\',\'2026-05-08 17:07:10\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:07:10\',\'36\',\'1\',\'2026-05-08 17:07:10\',\'34\'), (\'2026-05-08 17:07:10\',\'48\',\'1\',\'2026-05-08 17:07:10\',\'42\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:07:10 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:07:10\',\'36\',\'1\',\'2026-05-08 17:07:10\',\'34\'), (\'2026-05-08 17:07:10\',\'48\',\'1\',\'2026-05-08 17:07:10\',\'42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:07:10\',\'36\',\'1\',\'2026-05-08 17:07:10\',\'34\'), (\'2026-05-08 17:07:10\',\'48\',\'1\',\'2026-05-08 17:07:10\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:07:10\',\'36\',\'1\',\'2026-05-08 17:07:10\',\'34\'), (\'2026-05-08 17:07:10\',\'48\',\'1\',\'2026-05-08 17:07:10\',\'42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:07:10\',\'36\',\'1\',\'2026-05-08 17:07:10\',\'34\'), (\'2026-05-08 17:07:10\',\'48\',\'1\',\'2026-05-08 17:07:10\',\'42\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 17:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-08 17:08:24 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE) in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php(922): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\xamp\htdocs\neo\app\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+#9 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+#10 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamp\htdocs\neo\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-05-08 17:08:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:08:24\',\'36\',\'1\',\'2026-05-08 17:08:24\',\'34\'), (\'2026-05-08 17:08:24\',\'48\',\'1\',\'2026-05-08 17:08:24\',\'42\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:08:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:08:24\',\'36\',\'1\',\'2026-05-08 17:08:24\',\'34\'), (\'2026-05-08 17:08:24\',\'48\',\'1\',\'2026-05-08 17:08:24\',\'42\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:08:24\',\'36\',\'1\',\'2026-05-08 17:08:24\',\'34\'), (\'2026-05-08 17:08:24\',\'48\',\'1\',\'2026-05-08 17:08:24\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:08:24\',\'36\',\'1\',\'2026-05-08 17:08:24\',\'34\'), (\'2026-05-08 17:08:24\',\'48\',\'1\',\'2026-05-08 17:08:24\',\'42\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:08:24 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:08:24\',\'36\',\'1\',\'2026-05-08 17:08:24\',\'34\'), (\'2026-05-08 17:08:24\',\'48\',\'1\',\'2026-05-08 17:08:24\',\'42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:08:24\',\'36\',\'1\',\'2026-05-08 17:08:24\',\'34\'), (\'2026-05-08 17:08:24\',\'48\',\'1\',\'2026-05-08 17:08:24\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:08:24\',\'36\',\'1\',\'2026-05-08 17:08:24\',\'34\'), (\'2026-05-08 17:08:24\',\'48\',\'1\',\'2026-05-08 17:08:24\',\'42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:08:24\',\'36\',\'1\',\'2026-05-08 17:08:24\',\'34\'), (\'2026-05-08 17:08:24\',\'48\',\'1\',\'2026-05-08 17:08:24\',\'42\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 17:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-08 17:09:39 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE) in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php(922): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\xamp\htdocs\neo\app\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+#9 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+#10 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamp\htdocs\neo\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-05-08 17:09:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:09:39\',\'36\',\'1\',\'2026-05-08 17:09:39\',\'34\'), (\'2026-05-08 17:09:39\',\'48\',\'1\',\'2026-05-08 17:09:39\',\'42\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:09:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:09:39\',\'36\',\'1\',\'2026-05-08 17:09:39\',\'34\'), (\'2026-05-08 17:09:39\',\'48\',\'1\',\'2026-05-08 17:09:39\',\'42\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:09:39\',\'36\',\'1\',\'2026-05-08 17:09:39\',\'34\'), (\'2026-05-08 17:09:39\',\'48\',\'1\',\'2026-05-08 17:09:39\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:09:39\',\'36\',\'1\',\'2026-05-08 17:09:39\',\'34\'), (\'2026-05-08 17:09:39\',\'48\',\'1\',\'2026-05-08 17:09:39\',\'42\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:09:39 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:09:39\',\'36\',\'1\',\'2026-05-08 17:09:39\',\'34\'), (\'2026-05-08 17:09:39\',\'48\',\'1\',\'2026-05-08 17:09:39\',\'42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:09:39\',\'36\',\'1\',\'2026-05-08 17:09:39\',\'34\'), (\'2026-05-08 17:09:39\',\'48\',\'1\',\'2026-05-08 17:09:39\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:09:39\',\'36\',\'1\',\'2026-05-08 17:09:39\',\'34\'), (\'2026-05-08 17:09:39\',\'48\',\'1\',\'2026-05-08 17:09:39\',\'42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:09:39\',\'36\',\'1\',\'2026-05-08 17:09:39\',\'34\'), (\'2026-05-08 17:09:39\',\'48\',\'1\',\'2026-05-08 17:09:39\',\'42\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 17:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 17:12:07 --> ErrorException: Undefined property: App\Controllers\admin\ProductmanagementController::$db
+in APPPATH\Controllers\admin\productmanagementController.php on line 339.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\admin\\ProductmanagementController::$db', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 339)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 17:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 17:14:10 --> ErrorException: Undefined property: App\Controllers\admin\ProductmanagementController::$db
+in APPPATH\Controllers\admin\productmanagementController.php on line 339.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\admin\\ProductmanagementController::$db', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 339)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 17:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 17:14:53 --> ErrorException: Undefined property: App\Controllers\admin\ProductmanagementController::$db
+in APPPATH\Controllers\admin\productmanagementController.php on line 339.
+ 1 APPPATH\Controllers\admin\productmanagementController.php(339): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\admin\\ProductmanagementController::$db', 'D:\\xamp\\htdocs\\neo\\app\\Controllers\\admin\\productmanagementController.php', 339)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 17:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-08 17:18:21 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE) in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php(922): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\xamp\htdocs\neo\app\Controllers\admin\productmanagementController.php(359): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+#9 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+#10 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamp\htdocs\neo\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+INFO - 2026-05-08 17:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-08 17:26:05 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE) in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php(922): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\xamp\htdocs\neo\app\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+#9 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+#10 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamp\htdocs\neo\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+INFO - 2026-05-08 17:26:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-08 17:26:35 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE) in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php(922): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\xamp\htdocs\neo\app\Controllers\admin\productmanagementController.php(353): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+#9 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+#10 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamp\htdocs\neo\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-05-08 17:26:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:26:35\',\'36\',\'1\',\'2026-05-08 17:26:35\',\'34\'), (\'2026-05-08 17:26:35\',\'48\',\'1\',\'2026-05-08 17:26:35\',\'42\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\admin\productmanagementController.php(353): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:26:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:26:35\',\'36\',\'1\',\'2026-05-08 17:26:35\',\'34\'), (\'2026-05-08 17:26:35\',\'48\',\'1\',\'2026-05-08 17:26:35\',\'42\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:26:35\',\'36\',\'1\',\'2026-05-08 17:26:35\',\'34\'), (\'2026-05-08 17:26:35\',\'48\',\'1\',\'2026-05-08 17:26:35\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:26:35\',\'36\',\'1\',\'2026-05-08 17:26:35\',\'34\'), (\'2026-05-08 17:26:35\',\'48\',\'1\',\'2026-05-08 17:26:35\',\'42\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\admin\productmanagementController.php(353): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:26:35 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:26:35\',\'36\',\'1\',\'2026-05-08 17:26:35\',\'34\'), (\'2026-05-08 17:26:35\',\'48\',\'1\',\'2026-05-08 17:26:35\',\'42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:26:35\',\'36\',\'1\',\'2026-05-08 17:26:35\',\'34\'), (\'2026-05-08 17:26:35\',\'48\',\'1\',\'2026-05-08 17:26:35\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:26:35\',\'36\',\'1\',\'2026-05-08 17:26:35\',\'34\'), (\'2026-05-08 17:26:35\',\'48\',\'1\',\'2026-05-08 17:26:35\',\'42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:26:35\',\'36\',\'1\',\'2026-05-08 17:26:35\',\'34\'), (\'2026-05-08 17:26:35\',\'48\',\'1\',\'2026-05-08 17:26:35\',\'42\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\admin\productmanagementController.php(353): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 17:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-08 17:27:52 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE) in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php(922): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\xamp\htdocs\neo\app\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+#9 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+#10 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamp\htdocs\neo\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-05-08 17:27:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:27:52\',\'36\',\'1\',\'2026-05-08 17:27:52\',\'34\'), (\'2026-05-08 17:27:52\',\'48\',\'1\',\'2026-05-08 17:27:52\',\'42\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:27:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:27:52\',\'36\',\'1\',\'2026-05-08 17:27:52\',\'34\'), (\'2026-05-08 17:27:52\',\'48\',\'1\',\'2026-05-08 17:27:52\',\'42\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:27:52\',\'36\',\'1\',\'2026-05-08 17:27:52\',\'34\'), (\'2026-05-08 17:27:52\',\'48\',\'1\',\'2026-05-08 17:27:52\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:27:52\',\'36\',\'1\',\'2026-05-08 17:27:52\',\'34\'), (\'2026-05-08 17:27:52\',\'48\',\'1\',\'2026-05-08 17:27:52\',\'42\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:27:52 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:27:52\',\'36\',\'1\',\'2026-05-08 17:27:52\',\'34\'), (\'2026-05-08 17:27:52\',\'48\',\'1\',\'2026-05-08 17:27:52\',\'42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:27:52\',\'36\',\'1\',\'2026-05-08 17:27:52\',\'34\'), (\'2026-05-08 17:27:52\',\'48\',\'1\',\'2026-05-08 17:27:52\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:27:52\',\'36\',\'1\',\'2026-05-08 17:27:52\',\'34\'), (\'2026-05-08 17:27:52\',\'48\',\'1\',\'2026-05-08 17:27:52\',\'42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:27:52\',\'36\',\'1\',\'2026-05-08 17:27:52\',\'34\'), (\'2026-05-08 17:27:52\',\'48\',\'1\',\'2026-05-08 17:27:52\',\'42\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 17:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-08 17:31:59 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE) in D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\BaseModel.php(922): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\xamp\htdocs\neo\app\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+#9 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+#10 D:\xamp\htdocs\neo\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xamp\htdocs\neo\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2026-05-08 17:31:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:31:59\',\'36\',\'1\',\'2026-05-08 17:31:59\',\'34\'), (\'2026-05-08 17:31:59\',\'48\',\'1\',\'2026-05-08 17:31:59\',\'42\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 4 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 5 APPPATH\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:31:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:31:59\',\'36\',\'1\',\'2026-05-08 17:31:59\',\'34\'), (\'2026-05-08 17:31:59\',\'48\',\'1\',\'2026-05-08 17:31:59\',\'42\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:31:59\',\'36\',\'1\',\'2026-05-08 17:31:59\',\'34\'), (\'2026-05-08 17:31:59\',\'48\',\'1\',\'2026-05-08 17:31:59\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:31:59\',\'36\',\'1\',\'2026-05-08 17:31:59\',\'34\'), (\'2026-05-08 17:31:59\',\'48\',\'1\',\'2026-05-08 17:31:59\',\'42\')', null, false)
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 5 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-05-08 17:31:59 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`neon`.`product_sizes`, CONSTRAINT `product_sizes_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product_management` (`id`) ON DELETE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:31:59\',\'36\',\'1\',\'2026-05-08 17:31:59\',\'34\'), (\'2026-05-08 17:31:59\',\'48\',\'1\',\'2026-05-08 17:31:59\',\'42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:31:59\',\'36\',\'1\',\'2026-05-08 17:31:59\',\'34\'), (\'2026-05-08 17:31:59\',\'48\',\'1\',\'2026-05-08 17:31:59\',\'42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:31:59\',\'36\',\'1\',\'2026-05-08 17:31:59\',\'34\'), (\'2026-05-08 17:31:59\',\'48\',\'1\',\'2026-05-08 17:31:59\',\'42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1803): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product_sizes` (`created_at`, `height`, `multiplier`, `updated_at`, `width`)
+VALUES (\'2026-05-08 17:31:59\',\'36\',\'1\',\'2026-05-08 17:31:59\',\'34\'), (\'2026-05-08 17:31:59\',\'48\',\'1\',\'2026-05-08 17:31:59\',\'42\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 SYSTEMPATH\Model.php(361): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 7 SYSTEMPATH\BaseModel.php(922): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 8 APPPATH\Controllers\admin\productmanagementController.php(354): CodeIgniter\BaseModel->insertBatch([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\admin\ProductmanagementController->save()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\ProductmanagementController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 17:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:41:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:43:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 17:57:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "frontend/category/category.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('frontend/category/category.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('frontend/category/category', [], true)
+ 3 APPPATH\Views\frontend\collections\collections.php(3): view('frontend/category/category')
+ 4 SYSTEMPATH\View\View.php(228): include('D:\\xamp\\htdocs\\neo\\app\\Views\\frontend\\collections\\collections.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('frontend/collections/collections', [], true)
+ 7 APPPATH\Controllers\CollectionsController.php(5): view('frontend/collections/collections')
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\CollectionsController->index('gaming')
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CollectionsController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 17:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 17:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:05:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:34:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-08 18:39:20 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\frontend\products\custom_products.php on line 25.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('frontend/products/custom_products', [], true)
+ 4 APPPATH\Views\frontend\collections\collections.php(33): view('frontend/products/custom_products', [...])
+ 5 SYSTEMPATH\View\View.php(228): include('D:\\xamp\\htdocs\\neo\\app\\Views\\frontend\\collections\\collections.php')
+ 6 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('frontend/collections/collections', [], true)
+ 8 APPPATH\Controllers\CollectionsController.php(6): view('frontend/collections/collections', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\CollectionsController->index('gaming')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CollectionsController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-08 18:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:43:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 18:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:05:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:13:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:20:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:23:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:23:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:26:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:32:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-08 20:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
