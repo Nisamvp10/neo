@@ -85,7 +85,7 @@ class Database extends Config
         // Dynamic settings
         $this->tests['hostname'] = $isLocal ? 'localhost' : 'localhost';
 
-        $this->tests['username'] = $isLocal ? 'root' : 'u792725552_miraclemm2026d';
+        $this->tests['username'] = $isLocal ? 'root' : 'u792725552_neonnewUser';
 
         $this->tests['password'] = $isLocal ? '': '4mB#?#Ue*t';
 
