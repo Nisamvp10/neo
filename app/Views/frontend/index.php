@@ -408,72 +408,10 @@
                             }
                         }
                         ?>
-                    <div class="swiper-slide">
-                       
-                           <div class="gallery__item">
-                            <div class="off-tag">50% <br>
-                                off</div>
-                            <div class="gallery__image image">
-                                <img src="https://www.neonattack.com/cdn/shop/files/2_92.png?v=1745668895&width=275" alt="image">
-                            </div>
-                            <div class="gallery__content">
-                                <h3 class="mb-10"><a href="#">
-                      Cafe & Restaurant
-                    </a></h3>
-                                <p>Get a mock up. See how exactly this looks and get a price quote</p>
-                                <a href="#" class="btn-two mt-25"><span>Shop Now</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                      
-                           <div class="gallery__item">
-                            <div class="off-tag">50% <br>
-                                off</div>
-                            <div class="gallery__image image">
-                                <img src="https://www.neonattack.com/cdn/shop/files/3_39.png?v=1745669068&width=275" alt="image">
-                            </div>
-                            <div class="gallery__content">
-                                <h3 class="mb-10"><a href="#">
-                      Neon Wings
-                    </a></h3>
-                                <p>Get a mock up. See how exactly this looks and get a price quote</p>
-                                <a href="#" class="btn-two mt-25"><span>Shop Now</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                      
-                           <div class="gallery__item">
-                            <div class="off-tag">50% <br>
-                                off</div>
-                            <div class="gallery__image image">
-                                <img src="https://www.neonattack.com/cdn/shop/files/4_26.png?v=1745669206&width=275" alt="image">
-                            </div>
-                            <div class="gallery__content">
-                                <h3 class="mb-10"><a href="#">
-                      Under ₹4000
-                    </a></h3>
-                                <p>Get a mock up. See how exactly this looks and get a price quote</p>
-                                <a href="#" class="btn-two mt-25"><span>Shop Now</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                            
-                           <div class="gallery__item">
-                            <div class="off-tag">50% <br>
-                                off</div>
-                            <div class="gallery__image image">
-                                <img src="https://www.neonattack.com/cdn/shop/files/5_9.png?v=1745669300&width=275" alt="image">
-                            </div>
-                            <div class="gallery__content">
-                                <h3 class="mb-10"><a href="#">Kids</a></h3>
-                                <p>Get a mock up. See how exactly this looks and get a price quote</p>
-                                <a href="#" class="btn-two mt-25"><span>Shop Now</span></a>
-                            </div>
-                        </div>
-                    </div>
+                   
+                
+               
+
                 </div>
             </div>
         </section>
