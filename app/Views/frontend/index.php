@@ -206,7 +206,7 @@
 
 
 
-        <section class="discount-area about-area bg-image pt-130 pb-130" data-background="assets/images/discount-bg2.jpg">
+        <section class="discount-area about-area bg-image pt-130 pb-130" data-background="<?=base_url('public/assets/template/');?>assets/images/discount-bg2.jpg">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
