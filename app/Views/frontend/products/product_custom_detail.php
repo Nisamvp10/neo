@@ -32,8 +32,11 @@ $productPrice = $product['price'] ?? 0;
 $priceInfo = lowPrizesizeItem($product['id']);
 $defaultitemPrice = $priceInfo['extra_price'];
 $defaultSizeId = $priceInfo['id'];
-
-$totalPrice = $productPrice+$defaultitemPrice ?? 0;
+// getLowpriceFont
+$defaultFontInfo = getLowpriceFont($product['id']);
+$defaultFontPrice = $defaultFontInfo['base_price'];
+$totalPrice = $productPrice+$defaultitemPrice+$defaultFontPrice ?? 0;
+$defaultFontId = $defaultFontInfo['id'];
 // discount calculation 
 $comparePrice = $product['compare_price'] ?? 0;
 $discountPercent = 0;
@@ -46,6 +49,8 @@ if ($comparePrice > 0) {
     $sellingPrice = $totalPrice;
 }
 $pricedata = findProductPrice($product['id']);
+
+
 ?>
 
 <style>
@@ -156,8 +161,8 @@ $pricedata = findProductPrice($product['id']);
                                       <?php if(!empty($productFonts)):?>
                                             <div class="d-grid gap-3" style="grid-template-columns: repeat(4, minmax(0, 1fr));">
                                                 <?php foreach($productFonts as $key => $font):?>
-                                                <div class="font-style" data-font="<?= $font['font_name'] ?? ''; ?>">
-                                                    <input type="radio" name="font_id" class="font_id fontRadio visually-hidden" data-font="<?= $font['font_name'] ?? ''; ?>" value="<?= $font['id'] ?? ''; ?>" <?= ($key==0) ? 'checked' : '' ?>>
+                                                <div class="font-style <?=($defaultFontId==$font['id'])?" active":""; ?> " data-font="<?= $font['font_name'] ?? ''; ?>">
+                                                    <input type="radio" name="font_id" class="font_id fontRadio visually-hidden" data-font="<?= $font['font_name'] ?? ''; ?>" value="<?= $font['id'] ?? ''; ?>" <?= ($defaultFontId==$font['id']) ? 'checked' : '' ?>>
                                                     <label class="w-100  align-items-center"><?= $font['font_name'] ?? ''; ?>
                                                         <span class="price d-none">
                                                             <?= money_format_custom($font['base_price'] ?? ''); ?>

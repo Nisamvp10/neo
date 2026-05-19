@@ -204,6 +204,7 @@ function calculatePrice(){
     });
     // FONT
     let fontId = $('.font_id:checked').val();
+    console.log(fontId);
     //lters
     let text = $('#typeofGrapgy').val();
     

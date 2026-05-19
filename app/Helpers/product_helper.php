@@ -2,6 +2,7 @@
 use App\Models\ProductManageModel;
 use App\Models\CategoryModel;
 use App\Models\SizechartModel;
+use App\Models\ProductFontsModel;
 if(!function_exists('getCollections')){
     function getCollections($slug){
         $productManageModel = new ProductManageModel();
@@ -16,7 +17,22 @@ if(!function_exists('lowPrizesizeItem')){
        if($productId){
            $sizeChartModel = new SizechartModel();
            $defaultSize =  $sizeChartModel->where('product_id', $productId)->orderBy('extra_price', 'ASC')->limit(1)->get()->getRowArray();
+          if($defaultSize['extra_price'] == 0){
+            $defaultSize =  $sizeChartModel->where('product_id', $productId)->orderBy('id', 'ASC')->limit(1)->get()->getRowArray();
+          }
            return $defaultSize;
+       }else{
+        return '';
+       }
+    }
+}
+
+if(!function_exists('getLowpriceFont')){
+    function getLowpriceFont($productId){
+       if($productId){
+           $productFontsModel = new ProductFontsModel();
+           $defaultFont =  $productFontsModel->where('product_id', $productId)->orderBy('base_price', 'ASC')->limit(1)->get()->getRowArray();
+           return $defaultFont;
        }else{
         return '';
        }
