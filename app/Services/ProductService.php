@@ -1,7 +1,7 @@
 <?php
 namespace App\Services;
 use App\Models\ProductManageModel;
-use App\Models\ProductAddonModel;
+use App\Models\ProductaddonModel;
 use App\Models\ColoursModel;
 use App\Models\SizechartModel;
 use App\Models\ProductFontsModel;
@@ -14,7 +14,7 @@ class ProductService
     private $fontsModel;
     public function __construct() {
         $this->productManageModel = new ProductManageModel();
-        $this->productAddonModel = new ProductAddonModel();
+        $this->productAddonModel = new ProductaddonModel();
         $this->productColorModel = new ColoursModel();
         $this->productSizeModel = new SizechartModel();
         $this->fontsModel = new ProductFontsModel();
