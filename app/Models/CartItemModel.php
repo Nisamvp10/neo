@@ -5,7 +5,7 @@ class CartItemModel extends Model
 {
     protected $table = 'cart_items';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['cart_id', 'product_id', 'price', 'quantity', 'subtotal','created_at','updated_at'];
+    protected $allowedFields = ['cart_id', 'product_id', 'price','product_type','product_name', 'quantity','discount_amount', 'row_hash', 'subtotal','created_at','updated_at'];
     public function getItems($cartId)
     {
         return $this->where('cart_id', $cartId)->findAll();

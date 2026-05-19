@@ -27,11 +27,12 @@
                             </span>
                         </a>
                     </div>
-                    <div class="cart d-flex align-items-center">
-                        <span class="cart__icon">
+                    <div class="cart d-flex align-items-center justify-content-end">
+                        <span class="cart__icon relative">
+                            <span class="absolute badge-count" id="cartCount">0</span>
                             <i class="fa-regular fa-cart-shopping"></i>
                         </span>
-                        <a href="#0" class="c__one">
+                        <a href="#0" class="c__one ">
                             <span class="text-white">
                                 Rs 
                             </span>

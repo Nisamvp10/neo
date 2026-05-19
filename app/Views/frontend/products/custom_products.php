@@ -34,10 +34,12 @@
                         </a>
                         <div class="product__content">
                             <h4 class="mb-15"><a class="primary-hover" href="<?= base_url().'product-details/'.$product->slug;?>"><?= $product->product_title ?? '';?></a></h4>
+                            <?php if($product->product_type == 1):?>
                           <div class="d-flex align-items-center justify-content-between">
                            <?=($discountPercent > 0 ?  '<del>'.money_format_custom($lowSalePrice).'</del>' : '' );?>
                               <span class="primary-color ml-10"><?=money_format_custom($sellingPrice);?></span>
                           </div>
+                          <?php endif;?>
                             <div class="star mt-20">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>

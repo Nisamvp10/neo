@@ -9,6 +9,8 @@ use App\Models\ProductvariantImagesModel;
 use App\Models\SizechartModel;
 use App\Models\ProductaddonModel;
 use App\Models\ColoursModel;
+use App\Models\FontsModel;
+use App\Models\ProductcustomizationModel;
 class ProductmanagementController extends Controller
 {
     protected $categoryModel;
@@ -19,6 +21,8 @@ class ProductmanagementController extends Controller
     protected $sizeChartModel;
     protected $productaddonModel;
     protected $productColorModel;
+    protected $fontModel;
+    protected $productcustomizationModel;
     function __construct() {
         $this->imgUploader = new UploadImages();
         $this->categoryModel = new CategoryModel();
@@ -28,14 +32,17 @@ class ProductmanagementController extends Controller
         $this->sizeChartModel = new SizechartModel();
         $this->productaddonModel = new ProductaddonModel();
         $this->productColorModel = new ColoursModel();
+        $this->fontModel = new FontsModel();
+        $this->productcustomizationModel = new ProductcustomizationModel();
     }
     public function index()
     {
        $page = (haspermission('','product_management')) ? ucwords(getappdata('product_management')) : lang('Custom.permissiondenied');
        $route = (haspermission('','product_management')) ? 'admin/productmanagement/index' : 'admin/pages-error-404';
        $categories = $this->categoryModel->where('is_active',1)->findAll();
+       $fonts = $this->fontModel->findAll();
        //$products = 
-       return view($route,compact('page','categories'));
+       return view($route,compact('page','categories','fonts'));
     }
 
     public function getProductBycategory($id=false) {
@@ -145,6 +152,8 @@ class ProductmanagementController extends Controller
     }
 
     public function save() {
+
+       
         if(!$this->request->isAJAX()){
             return $this->response->setJSON(['success' => false,'message' => lang('Custom.invalidRequest')]);
         }
@@ -265,7 +274,6 @@ class ProductmanagementController extends Controller
         $colors_code = $this->request->getPost('colors_code');
         $colors_extra = $this->request->getPost('colors_extra');
         $colors_image = $this->request->getPost('colors_image');
-        $colors_image = $this->request->getPost('colors_image');
         $colorsData = [];
         if(isset($colors_name)){
 
@@ -283,7 +291,7 @@ class ProductmanagementController extends Controller
                     $color_validation['color_code.'.$key] = 'required';
 
                 if(empty($colors_extra[$key]) || !is_numeric($colors_extra[$key]))
-                    $color_validation['color_extra.'.$key] = 'required|numeric|greater_than_equal_to[0, true]';
+                   // $color_validation['color_extra.'.$key] = 'required|numeric|greater_than_equal_to[0, true]';
 
                 // Only validate image if selected
                 if(!empty($colors_image[$key])){
@@ -311,7 +319,6 @@ class ProductmanagementController extends Controller
             }
 
             // save to session
-            //session()->set('product_colors', $colorsData);
 
             // Upload color images if files are present
             if(!empty($this->request->getFiles('colors_image')) && empty($id)){
@@ -328,7 +335,7 @@ class ProductmanagementController extends Controller
             }
         }
 
-
+         
         $file = $this->request->getFile('file');
         $selectedImage = $this->request->getPost('selected_image');
 
@@ -402,6 +409,28 @@ class ProductmanagementController extends Controller
         if(!empty($imagePath)) {
             $data['product_image'] = str_replace(base_url(),'',$imagePath);
         }
+
+        // customzation data store
+
+        $fonts = $this->request->getPost('fonts');
+        $font_base = $this->request->getPost('font_base');
+        $font_extra = $this->request->getPost('font_extra');
+       // $font_image = $this->request->getPost('font_image');
+      
+        $customizationData = [];
+        if(!empty($fonts)){
+            foreach($fonts as $key => $font){
+                $font = $this->fontModel->find($font);
+                $customizationData[] = [
+                    'font_name' => $font['font_name'],
+                    'base_price' => $font_base[$key],
+                    'extra_letter_price' => $font_extra[$key],
+                    'status' => 1,
+                   // 'font_file' => $font_image[$key],
+                ];
+            }
+        }
+
 
         if($id){
           
@@ -591,7 +620,13 @@ class ProductmanagementController extends Controller
                             $uploadedPath['product_id'] = $insertId;
                         }
                     $this->productvariantImagesModel->insertBatch($uploadedPaths);
-                }          
+                }       
+                if(!empty($customizationData) && count($customizationData) > 0){
+                        foreach ($customizationData as &$customization) {
+                            $customization['product_id'] = $insertId;
+                        }
+                    $this->productcustomizationModel->insertBatch($customizationData);
+                }   
                     $message = 'Data successfully added';
                     $validStatus = true;
             }else{

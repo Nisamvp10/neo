@@ -1,4 +1,10 @@
+
+
+
 document.addEventListener('click', async (e) => {
+    /* ================= ADD TO CART FROM DETAIL PAGE ================= */
+
+
     /* ================= ADD TO CART ================= */
     if (e.target.closest('.add-to-cart')) {
 
@@ -63,6 +69,34 @@ document.addEventListener('click', async (e) => {
 
 });
 
+
+$(document).off('submit', '#cartForm').on('submit', '#cartForm', async function (e) {
+
+    e.preventDefault();
+
+    const form = this;
+    const formData = new FormData(form);
+
+    const response = await fetch(App.getSiteurl() + "cart/add", {
+        method: "POST",
+        headers: {
+            "X-Requested-With": "XMLHttpRequest"
+        },
+        body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.status) {
+        toastr.success(data.message);
+        //   document.getElementById('cartCount').innerText = data.cartCount;
+        cartNotification();
+    } else {
+        toastr.error(data.message);
+    }
+});
+
+
 cartNotification();
 function cartNotification() {
     fetch(App.getSiteurl() + "cart/getCart", {
@@ -75,6 +109,7 @@ function cartNotification() {
         .then(response => response.json())
         .then(data => {
             if (data.res) {
+                $('.one').text(data.cartAmount);
                 $('#cartCount').text(data.itmsCount);
                 if (data.itmsCount > 0) {
                     let cartHtml = "";

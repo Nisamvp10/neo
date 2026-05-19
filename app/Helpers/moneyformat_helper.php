@@ -31,6 +31,7 @@ if (!function_exists('money_format_custom')) {
             'EUR' => '€',
             'GBP' => '£',
             'JPY' => '¥',
+
         ];
 
         $symbol = $symbols[$currency] ?? '';

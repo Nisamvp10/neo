@@ -48,7 +48,7 @@ class CartController extends Controller
 
     public function add()
     {
-        $data = $this->request->getJSON(true);
+        $data = $_POST;//$this->request->getJSON(true);
         $result = $this->cart->add($data);
         return $this->response->setJSON($result);
     }
@@ -77,6 +77,10 @@ class CartController extends Controller
     {
         $result = $this->cart->getCartItems();
         $cartItemhtml = $result; //view('frontend/cart/cart-items-navbar',compact('result'));
-        return $this->response->setJSON(['res' =>$cartItemhtml,'itmsCount' => count($result)]);
+        $cartAmount = 0;
+        foreach ($result as $item) {
+            $cartAmount += $item['subtotal'];
+        }
+        return $this->response->setJSON(['res' =>$cartItemhtml,'itmsCount' => count($result),'cartAmount' =>str_replace('₹','', money_format_custom($cartAmount))]);
     }
 }

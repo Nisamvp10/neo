@@ -78,6 +78,7 @@ class ProductManageModel extends Model{
             pm.compare_price,
             pm.product_image,
             pm.product_status,
+            pm.product_type,
             pm.seo_title,
             pm.seo_description,
             pm.short_description,

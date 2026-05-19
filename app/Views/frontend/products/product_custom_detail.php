@@ -58,7 +58,7 @@ $pricedata = findProductPrice($product['id']);
     .board-size-list:last-child{
         margin-right: 0px;
     }
-    .board-size-list.active{
+    .board-size-list.active,.font-style.active{
         background: #1db3b3;
         color: #fff;
     }
@@ -79,7 +79,7 @@ $pricedata = findProductPrice($product['id']);
         gap: 8px;
         display: grid;
     }
-    .color-wrap .color_list{
+    .color-wrap .color_list,.color-wrap .color_list_btn{
       cursor: pointer;
         border: 3px solid rgb(var(--section-background, var(--background)));
         border-radius: var(--color-swatch-border-radius);
@@ -104,30 +104,15 @@ $pricedata = findProductPrice($product['id']);
 </style>
 <div class="product-details-single pb-40">
     <div class="row g-4">
-        <div class="col-lg-5">
+        <div class="col-lg-7">
             <div class="image img">
-                <div class="swiper shop-single-slide">
-                    <div class="swiper-wrapper">
-                        <?php foreach($mainProductImages['images'] as $image):?>
-                        <div class="swiper-slide" data-color="<?= strtolower($image['alt']) ?>">
-                            <img src="<?= $image['image'] ?>" alt="<?= $image['alt'] ?>">
-                        </div>
-                        <?php endforeach;?>
-                       
-                    </div>
-                </div>
-                <div class="mt-3 swiper shop-slider-thumb">
-                    <div class="swiper-wrapper">
-                         <?php foreach($mainProductImages['images'] as $image):?>
-                        <div class="swiper-slide slide-smoll" data-color="<?= strtolower($image['alt']) ?>">
-                            <img src="<?= $image['image'] ?>" alt="<?= $image['alt'] ?>" style="height: 100px;">
-                        </div>
-                        <?php endforeach;?>
-                    </div>
+                <div class="preview-box" style="height: 100%; overflow: hidden;">
+                      <canvas id="canvas" width="1200" height="1000" data-bg-image="<?= validImg($product['product_image']); ?>"></canvas>
                 </div>
             </div>
+
         </div>
-        <div class="col-lg-7">
+        <div class="col-lg-5">
             <div class="content h24">
                 <h3 class="pb-2 primary-color"><?= $product['product_title'] ?? ''; ?></h3>
                 <div class="star primary-color pb-2">
@@ -138,7 +123,6 @@ $pricedata = findProductPrice($product['id']);
                                     <span><i class="fa-solid fa-star-half-stroke sm-font"></i></span>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between">
-
                                     <h2 class="pb-3" id="productSellingPrice"><?= money_format_custom($pricedata['salesPrice']); ?></h2>
                                     <?=($pricedata['discountAmount'] >0 ?'<span class="pb-3 text-decoration-line-through total_price" id="productPrice">'.money_format_custom($pricedata['price']).'</span>'  :'') ;?>
                                 </div>
@@ -151,6 +135,43 @@ $pricedata = findProductPrice($product['id']);
                             <div class="row">
                                 <form id='cartForm' method='POST' accept-charset="UTF-8" class='' action="<?= site_url('cart/add') ?>">
                                     <input type="hidden" name="product_id" value="<?= $product['id'] ?? ''; ?>">
+
+                                    <div class="col-md-12 mb-3">
+                                        <div class="option-title pb-2">
+                                            <h3>Type Your Text</h3>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <textarea class="typeofGrapgy" id="typeofGrapgy" rows="2" cols="10" name="text"></textarea>
+                                            </div>
+                                        </div>
+                                     
+                                    </div>
+
+
+                                        <div class="col-md-12 mb-3">
+                                        <div class="option-title pb-2">
+                                            <h3>Fonts</h3>
+                                        </div>
+                                      <?php if(!empty($productFonts)):?>
+                                            <div class="d-grid gap-3" style="grid-template-columns: repeat(4, minmax(0, 1fr));">
+                                                <?php foreach($productFonts as $key => $font):?>
+                                                <div class="font-style" data-font="<?= $font['font_name'] ?? ''; ?>">
+                                                    <input type="radio" name="font_id" class="font_id fontRadio visually-hidden" data-font="<?= $font['font_name'] ?? ''; ?>" value="<?= $font['id'] ?? ''; ?>" <?= ($key==0) ? 'checked' : '' ?>>
+                                                    <label class="w-100  align-items-center"><?= $font['font_name'] ?? ''; ?>
+                                                        <span class="price d-none">
+                                                            <?= money_format_custom($font['base_price'] ?? ''); ?>
+                                                        </span>
+                                                    </label>
+
+                                                </div>
+
+                                                <?php endforeach; ?>
+
+                                            </div>
+
+                                            <?php endif; ?>
+                                    </div>
                                 <div class="col-lg-12">
                                     <div class="details-area align-items-center">
                                         <?php if(!empty($productSize)):?>
@@ -178,10 +199,7 @@ $pricedata = findProductPrice($product['id']);
                                                             <?= money_format_custom($addon['addon_price'] ?? ''); ?>
                                                         </small>
 
-                                                        <input type="checkbox"
-                                                            class="addonCheckbox visually-hidden"
-                                                            name="addon_ids[]"
-                                                            value="<?= $addon['id'] ?? ''; ?>">
+                                                        <input type="checkbox" class="addonCheckbox visually-hidden" name="addon_ids[]" value="<?= $addon['id'] ?? ''; ?>">
 
                                                     </label>
                                                 <?php endforeach; ?>
@@ -194,8 +212,8 @@ $pricedata = findProductPrice($product['id']);
                                             <h4 class="pe-3">Color:</h4>
                                             <div class="d-grid color-wrap">
                                            <?php foreach($productColor as $color): ?>
-                                                <label class="color_list m-0 primary-hover" style="background-color: <?= $color['color_code'] ?>" data-color="<?= strtolower($color['color_name']) ?>" >
-                                                    <input type="radio" class="colorRadio visually-hidden" name="color_id" value="<?= $color['id'] ?>">
+                                                <label class="color_list_btn m-0 primary-hover" style="background-color: <?= $color['color_code'] ?>" data-color="<?= strtolower($color['color_name']) ?>" >
+                                                    <input type="radio" class="colorRadio visually-hidden " name="color_id" value="<?= $color['id'] ?>" data-color="<?= $color['color_code'] ?>">
                                                 </label>
                                             <?php endforeach; ?>
                                             </div>

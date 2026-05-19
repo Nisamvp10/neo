@@ -1,6 +1,20 @@
 <?= $this->extend('template/layout/main') ?>
 
 <?= $this->section('content') ?>
+<link href="https://fonts.googleapis.com/css2?
+family=Pacifico&
+family=Great+Vibes&
+family=Orbitron&
+family=Poppins:wght@300;400;500;600&
+family=Roboto:wght@300;400;500;700&
+family=Montserrat:wght@400;500;600&
+family=Lobster&
+family=Oswald:wght@300;400;500&
+family=Raleway:wght@300;400;500;600&
+family=Playfair+Display:wght@400;500;600&
+family=Anton&
+family=Dancing+Script:wght@400;500;600&
+display=swap" rel="stylesheet">
 <style>
     .section-card{
          background:#fff;
@@ -226,25 +240,23 @@ $('#addAddon').click(function () {
 
             <div class="grid grid-cols-5 gap-3 border p-4 rounded-2xl font-item">
 
-                <input type="text"
-                    placeholder="Font Name"
-                    class="border rounded-xl p-3 font-name">
+             
+                    <select id="fonts" name="fonts[]" class="w-full border p-3 rounded border rounded-xl p-3 font-name" id="fonts">
+                        <option value="">Select Font</option>
+                        <?php if(!empty($fonts)) { ?>
+                            <?php foreach($fonts as $font) { ?>
+                                <option data-font="<?= $font['font_name'] ?>"  value="<?php echo $font['id']; ?>"><?php echo $font['font_name']; ?></option>
+                            <?php } ?>
+                        <?php } ?>
+                    </select>
 
-                <input type="number"
-                    placeholder="Base Price"
-                    class="border rounded-xl p-3 font-base">
+                <input type="number" name="font_base[]" placeholder="Base Price" class="border rounded-xl p-3 font-base">
 
-                <input type="number"
-                    placeholder="Extra Letter Price"
-                    class="border rounded-xl p-3 font-extra">
+                <input type="number" name="font_extra[]" placeholder="Extra Letter Price" class="border rounded-xl p-3 font-extra">
 
-                <input type="file"
-                    class="border rounded-xl p-2">
+                <input type="file" name="font_file[]" class="border rounded-xl p-2">
 
-                <button type="button"
-                    class="remove-btn remove">
-                    Remove
-                </button>
+                <button type="button" class="remove-btn remove">Remove</button>
 
             </div>
 
@@ -255,18 +267,6 @@ $('#addAddon').click(function () {
     });
 
 
-
-// ADD FONT
-$('#addFont').click(function () {
-    $('#fontContainer').append(`
-        <div class="grid grid-cols-4 gap-2">
-            <input name="fonts[][name]" placeholder="Font Name" class="border p-2 rounded font-name">
-            <input name="fonts[][base]" placeholder="Base Price" class="border p-2 rounded font-base">
-            <input name="fonts[][extra]" placeholder="Extra Price" class="border p-2 rounded font-extra">
-            <button type="button" class="remove text-red-500">X</button>
-        </div>
-    `);
-});
 
 // ADD SIZE (CUSTOM)
 $('#addSizeCustom').click(function () {
@@ -323,6 +323,56 @@ $(document).on('click', '.remove', function () {
     $(this).parent().remove();
 });
 
+
+
+    // ================= PREVIEW OPTIONS =================
+
+    function updatePreviewOptions(){
+
+        let fontSelect = $('#preview_font');
+        let colorSelect = $('#preview_color');
+
+        fontSelect.empty();
+        colorSelect.empty();
+
+
+        // FONTS
+        $('.font-name').each(function(){
+
+          let font = $(this).find(':selected').data('font');
+
+            if(font){
+                fontSelect.append(`
+                    <option value="${font}">
+                        ${font}
+                    </option>
+                `);
+            }
+
+        });
+
+
+        // COLORS
+        $('.color-item').each(function(){
+
+            let name = $(this).find('.color-name').val();
+            let code = $(this).find('.color-code').val();
+
+            if(name){
+
+                colorSelect.append(`
+                    <option value="${code}">
+                        ${name}
+                    </option>
+                `);
+
+            }
+
+        });
+
+    }
+
+
 // PREVIEW OPTIONS
 function updatePreview() {
     let fontSelect = $('#preview_font');
@@ -332,7 +382,9 @@ function updatePreview() {
     sizeSelect.empty();
 
     $('.font-name').each(function (i) {
-        let name = $(this).val();
+        let font = $(this).find(':selected').data('font');
+       // let name = $(this).val();
+       name = font;
         let base = $('.font-base').eq(i).val();
         let extra = $('.font-extra').eq(i).val();
 
@@ -377,6 +429,71 @@ function calc() {
 }
 
 $(document).on('keyup change', '#preview_text, #preview_font, #preview_size', calc);
+
+// 
+
+
+ $(document).on('keyup change','.font-name,.color-name,.color-code',updatePreviewOptions);
+
+
+
+    // ================= CANVAS PREVIEW =================
+
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+
+
+    function drawText(){
+
+        let text =
+            $('#preview_text').val() || 'Neon Preview';
+
+        let font =
+            $('#preview_font').val() || 'Arial';
+
+        let color =
+            $('#preview_color').val() || '#00ffff';
+
+
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+
+
+        ctx.font = "100px '"+font+"'";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+
+
+        let x = canvas.width / 2;
+        let y = canvas.height / 2;
+
+
+        // OUTER GLOW
+        ctx.shadowColor = color;
+        ctx.shadowBlur = 60;
+        ctx.fillStyle = color;
+        ctx.fillText(text,x,y);
+
+        // MID GLOW
+        ctx.shadowBlur = 40;
+        ctx.fillText(text,x,y);
+
+        // INNER GLOW
+        ctx.shadowBlur = 20;
+        ctx.fillText(text,x,y);
+
+        // SHARP TEXT
+        ctx.shadowBlur = 0;
+        ctx.fillStyle = "#ffffff";
+        ctx.fillText(text,x,y);
+
+    }
+
+
+
+    $(document).on('keyup change','#preview_text,#preview_font,#preview_color',drawText);
+
+    drawText();
+
 
 </script>
 <?= $this->endSection() ?>

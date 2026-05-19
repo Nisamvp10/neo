@@ -7,6 +7,11 @@ use App\Models\CategoryModel;
 use App\Models\CouponcodeModel;
 use App\Models\ProductManageModel;
 use App\Models\CustomerOrderModel;
+use App\Services\ProductService;
+use App\Models\CartAddonItemsModel;
+use App\Models\CartItemCustomizationModel;
+use App\Models\ProductFontsModel;
+
 class CartService
 {
     protected $cartModel;
@@ -17,6 +22,10 @@ class CartService
     protected $couponcodeModel;
     protected $customerOrderModel;
     protected $cartSessionId = null;
+    protected $productService;
+    protected $cartAddonItemsModel;
+    protected $cartItemCustomizationModel;
+    protected $productFontsModel;
 
     public function __construct()
     {
@@ -27,6 +36,10 @@ class CartService
         $this->productManageModel = new ProductManageModel();
         $this->couponcodeModel = new CouponcodeModel();
         $this->customerOrderModel = new CustomerOrderModel();
+        $this->productService = new ProductService();
+        $this->cartAddonItemsModel = new CartAddonItemsModel();
+        $this->cartItemCustomizationModel = new CartItemCustomizationModel();
+        $this->productFontsModel = new ProductFontsModel();
     }
     private function getCartSessionId()
     {
@@ -159,12 +172,16 @@ class CartService
         return $this->cartModel->insert([
             'user_id'    => $userId,
             'session_id' => $this->getCartSessionId(),
+            'is_guest' => $userId > 0 ? 2 : 1,
             'created_at' => date('Y-m-d H:i:s')
         ]);
     }
 
    public function add($data)
     {
+        
+        $productPriceList = $this->productService->calculateProductPrice($data);
+     
         $productId = $data['product_id'] ?? null;
         $qty       = max(1, (int)($data['qty'] ?? 1));
 
@@ -174,45 +191,156 @@ class CartService
             return ['status' => false, 'message' => 'Out of stock'];
         }
 
-        $productPrice =  calculatePrice(
-                    $product['price'],
-                    $product['compare_price'],
-                    $product['price_offer_type']
-            );
-            
-            $offerPrice  = $productPrice['offer_price'];
-            $discount    = $productPrice['discount'];
-            $actualPrice = $productPrice['actual_price'];
+        $salesPrice = $productPriceList['salesPrice'];
+        $discountAmount = $productPriceList['discountAmount'];
+        $basePrice = $productPriceList['basePrice'];
 
         $cart = $this->getCart();
         $cartId = $cart['id'] ?? $this->createCart();
 
-        $item = $this->itemModel
-            ->where('cart_id', $cartId)
-            ->where('product_id', $productId)
-            ->first();
-
-        $newQty = $item ? $item['quantity'] + $qty : $qty;
+        $item = $this->itemModel->where('cart_id', $cartId)->where('product_id', $productId)->first();
+        
+        $newQty = $qty ?? 1;//$item ? $item['quantity'] + $qty : $qty;
 
         if ($newQty > $stockItem['current_stock']) {
             return ['status' => false, 'message' => 'Stock exceeded'];
         }
 
+        // add add-ons
+        $addons = $data['addon_ids'] ?? [];
+        $addOnTotal = 0;
+        if(!empty($data['addon_ids'])){
+            foreach ($addons as $addonId => $adonitemId) {
+                $addon = $this->productService->findAddon($adonitemId);
+            
+                if ($addon) {
+                    // if addon exist already in cart 
+                    $existingAddon = $this->cartAddonItemsModel->where('cart_item_id', $item['id'])->where('addon_id', $addon['id'])->first();
+                    //remove old add on items 
+                    $fromColoursIds = array_filter($data['addon_ids']);
+                    $existingAddonItm = $this->cartAddonItemsModel->where('cart_item_id', $item['id'])->findColumn('addon_id');
+                    if(!empty($existingAddonItm)){
+                        $oldaddondata  = array_diff($existingAddonItm, $fromColoursIds);
+                        if(!empty($oldaddondata)){
+                            $this->cartAddonItemsModel->where('cart_item_id', $item['id'])->whereIn('addon_id', $oldaddondata)->delete();                
+                        }
+                    }
+
+                    if ($existingAddon) {
+
+                        $this->cartAddonItemsModel->update($existingAddon['id'], [
+                            'cart_item_id' => $item['id'],
+                            'addon_id' => $addon['id'],
+                            'addon_name' => $addon['addon_name'],
+                            'addon_price' => $addon['addon_price'],
+                        ]);
+                        $basePrice += $addon['addon_price'];
+                    } else {
+                        $this->cartAddonItemsModel->insert([
+                            'cart_item_id' => $item['id'],
+                            'addon_id' => $addon['id'],
+                            'addon_price' => $addon['addon_price'],
+                            'addon_name' => $addon['addon_name'],
+                            'created_at' => date('Y-m-d H:i:s')
+                        ]);
+                        $basePrice += $addon['addon_price'];
+                    }
+                }
+            }
+        }
+
+
+        $addonIds = isset($data['addon_ids']) ? $data['addon_ids'] : [];
+        sort($addonIds);
+        $rowHash = md5(json_encode([
+
+            'type'        => ($product['product_type'] == 1 ? 'normal' : 'custom'),
+            'product_id'  => $productId,
+            'size_id'     => isset($data['size_id']) ? $data['size_id'] : '',
+            'color_id'    => isset($data['color_id']) ? $data['color_id'] : '',
+            'font_id'     => isset($data['font_id']) ? $data['font_id'] : '',
+            'custom_text' => trim($data['custom_text'] ?? ''),
+            'addons'      => $addonIds
+
+        ]));
+
+        //cart_item_id	custom_text	font_id	font_name	color_id	color_name	size_id	size_name	preview_image	calculated_price
+
+        if(!empty($data['size_id']) || !empty($data['color_id']) || !empty($data['font_id']) || !empty($data['custom_text']) || !empty($data['preview_image']) || !empty($data['calculated_price'])){
+            //check exist data from database 
+            $exisitCartItemCustomization = $this->cartItemCustomizationModel->where('cart_item_id', $cartId)->first();
+            if(!empty($data['color_id'])){
+                $color = $this->productService->productColorByIds($data['color_id']);
+                $data['color_name'] = $color['color_name'];
+                $data['color_price'] = $color['extra_price'];
+            }
+            if(!empty($data['size_id'])){
+                $size = $this->productService->productSizeByid($data['size_id']);
+                $data['size_name'] = $size['size_name'];
+                $data['size_price'] = $size['extra_price'];
+            }
+            if(!empty($data['font_id'])){
+                $font = $this->productService->productFont($data['font_id']);
+                $data['font_name'] = $font['font_name'];
+                $data['font_price'] = $font['extra_price'];
+            }
+        
+            //normal product
+          
+            $custmizeData = [
+                'size_id' => $data['size_id'] ?? '',
+                'size_name' => $data['size_name'] ?? '',
+                'size_price'=>$data['size_price'] ?? '',
+                'color_id' => $data['color_id'] ?? '',
+                'color_name' => $data['color_name'] ?? '',
+                'colour_price'=>$data['color_price'] ?? '',
+                'font_id' => $data['font_id'] ?? '',
+                'font_name' => $data['font_name'] ?? '',
+                'font_price'=>$data['font_price'] ?? '',
+                'custom_text' => $data['custom_text'] ?? '',
+                'preview_image' => $data['preview_image'] ?? '',
+                'calculated_price' => $data['calculated_price'] ?? '',
+            ];
+            if($exisitCartItemCustomization){
+
+                $this->cartItemCustomizationModel->update($exisitCartItemCustomization['id'],$custmizeData);
+            }else{
+                $custmizeData['cart_item_id'] = $cartId;
+                $this->cartItemCustomizationModel->insert($custmizeData);
+            }
+        }
+
+
         if ($item) {
+            if($item['row_hash'] == $rowHash){
+                $newQty = $qty ?? 1;
+            }
             $this->itemModel->update($item['id'], [
                 'quantity' => $newQty,
-                'subtotal' => $newQty * $offerPrice,
+                'subtotal' =>  $productPriceList['salesPrice'],
+                'discount_amount' => $productPriceList['discountAmount'],
+                'price' => $productPriceList['unitPrice'],
+                'product_name' => $product['product_title'],
+                'product_type' => ($product['product_type'] == 1 ? 'normal' : 'custom'),
+                'row_hash' => $rowHash,
                 'updated_at' => date('Y-m-d H:i:s')
             ]);
         } else {
             $this->itemModel->insert([
                 'cart_id' => $cartId,
                 'product_id' => $productId,
-                'price' => $offerPrice,
+                'price' => $productPriceList['unitPrice'],
+                'subtotal' => $productPriceList['salesPrice'],
+                'discount_amount' => $productPriceList['discountAmount'],
+                'product_name' => $product['product_title'],
+                'product_type' => ($product['product_type'] == 1 ? 'normal' : 'custom'),
+                'row_hash' => $rowHash,
                 'quantity' => $qty,
-                'subtotal' => $qty * $offerPrice
+                'created_at' => date('Y-m-d H:i:s')
             ]);
         }
+
+
 
         return [
             'status' => true,

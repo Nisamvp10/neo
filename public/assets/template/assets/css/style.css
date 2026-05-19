@@ -2503,7 +2503,7 @@ input {
 }
 
 .top__header .top__wrapper .account__wrap .cart {
-  width: 174px;
+  width: 250px;
   border-radius: 100px;
   background-color: var(--white);
   gap: 19px;
@@ -2515,6 +2515,9 @@ input {
   font-weight: 500;
   border-top-right-radius: 26px;
   border-bottom-right-radius: 26px;
+  color: #000 !important;
+  font-weight: bold;
+
 }
 
 @media (max-width: 767px) {
@@ -4011,6 +4014,13 @@ input {
   transition: var(--transition);
   margin: 0 auto;
   border: 1px solid #232323;
+}
+
+a.category__image img {
+  width: 80%;
+  overflow: hidden;
+  border-radius: 50%;
+  height: 80%;
 }
 
 .category__image .category-icon {
@@ -5550,4 +5560,50 @@ input {
 .size-body div {
   margin: 5px 0;
   font-size: 14px;
+}
+
+.font-style {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  font-family: attr(data-font);
+  font-size: 13px;
+  text-align: center;
+}
+
+.typeofGrapgy {
+  cursor: pointer;
+  width: 100%;
+  min-height: 10em;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px #d5d5d575 solid;
+  color: #fff;
+  padding: 10px;
+}
+
+/* preview */
+.preview-box {
+  background: #0f172a;
+  border-radius: 20px;
+  min-height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.color-preview {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 2px solid #ddd;
+}
+
+canvas {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 15px;
+  display: block;
 }

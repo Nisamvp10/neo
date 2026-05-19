@@ -8,6 +8,7 @@ use App\Models\ProductaddonModel;
 use App\Models\ColoursModel;
 use App\Models\ProductvariantImagesModel;
 Use App\Services\ProductService;
+use App\Models\ProductFontsModel;
 class ProductController extends BaseController
 {
     protected $productModel;
@@ -18,6 +19,7 @@ class ProductController extends BaseController
     protected $productColorModel;
     protected $productVariantImagesModel;
     protected $productService;
+    protected $productFontsModel;
 
     function __construct()
     {
@@ -29,6 +31,7 @@ class ProductController extends BaseController
         $this->productColorModel = new ColoursModel();
         $this->productVariantImagesModel = new ProductvariantImagesModel();
         $this->productService = new ProductService();
+        $this->productFontsModel = new ProductFontsModel();
     }
     public function index()
     {
@@ -120,9 +123,11 @@ class ProductController extends BaseController
         $productColor = $this->productColorModel->where(['product_id' => $product['id']])->findAll();
         // product variant images
         $productVariantImages = $this->productVariantImagesModel->where(['product_id' => $product['id']])->findAll();
+        //product fonts
+        $productFonts = $this->productFontsModel->where(['product_id' => $product['id']])->findAll();
+     
 
-    
-        return view('frontend/products/productdetials',compact('product','page','pageTitle','productSize','productAddon','productColor','productVariantImages'));
+        return view('frontend/products/productdetials',compact('product','page','pageTitle','productSize','productAddon','productColor','productVariantImages','productFonts'));
     } 
 
     public function calculateProductPrice() {

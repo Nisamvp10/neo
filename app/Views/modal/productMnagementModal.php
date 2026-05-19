@@ -92,7 +92,7 @@
 
                         <!-- open -->
                           <!-- ================= NORMAL PRODUCT ================= -->
-                            <div id="normal_section">
+                            <div id="normal_section__">
 
                               <div class="section-card hidden">
                                 <h2 class="text-xl font-semibold mb-3">Base Price</h2>
@@ -141,27 +141,44 @@
                                     <div id="fontContainer" class="space-y-4"></div>
                                 </div>
 
-                                <!-- Sizes -->
-                                <div class="mt-6">
-                                    <div class="flex justify-between">
-                                        <h2 class="text-xl font-semibold">Sizes</h2>
-                                        <button type="button" id="addSizeCustom" class="bg-green-500 text-white px-3 py-1 rounded">+ Add</button>
+                              
+
+                                   <!-- LIVE PREVIEW -->
+                                    <div class="section-card">
+
+                                        <h2 class="title">
+                                            Live Preview
+                                        </h2>
+
+                                        <div class="grid grid-cols-3 md:grid-cols-3 gap-5 mb-5">
+
+                                            <input type="text"
+                                                id="preview_text"
+                                                placeholder="Type text"
+                                                class="border rounded-xl p-3">
+
+                                            <select id="preview_font"
+                                                class="border rounded-xl p-3">
+
+                                            </select>
+
+                                            <select id="preview_color"
+                                                class="border rounded-xl p-3">
+
+                                            </select>
+
+                                        </div>
+
+                                        <div class="preview-box">
+
+                                            <canvas id="canvas"
+                                                width="1200"
+                                                height="300">
+                                            </canvas>
+
+                                        </div>
+
                                     </div>
-                                    <div id="sizeCustomContainer" class="mt-3 space-y-2"></div>
-                                </div>
-
-                                <!-- Live Preview -->
-                                <div class="mt-6 p-4 bg-gray-50 border rounded">
-                                    <h2 class="font-semibold mb-2">Live Price Preview</h2>
-
-                                    <input type="text" id="preview_text" placeholder="Enter text"
-                                        class="w-full border p-2 rounded mb-2">
-
-                                    <select id="preview_font" class="w-full border p-2 rounded mb-2"></select>
-                                    <select id="preview_size" class="w-full border p-2 rounded mb-2"></select>
-
-                                    <p class="font-bold">Price: ₹ <span id="preview_price">0</span></p>
-                                </div>
 
                             </div>
 
@@ -220,7 +237,7 @@
                     <div class="bg-card rounded-xl p-6 space-y-6 border border-border mt-2">
                         <div class="grid gap-4 sm:grid-cols-4">
                               <div class="space-y-2">
-                                 <div class=" border border-border p-2 rounded-xl">
+                                 <div class=" border border-border p-2 rounded-xl"> 
                                         <h4 class="text-lg font-medium">Product Status</h4>
                                         <p class="text-sm text-muted-foreground">Active products are visible in your store</p>
                                         <label class="form-check form-switch mt-2">
