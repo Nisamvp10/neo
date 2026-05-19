@@ -199,6 +199,7 @@ class CartService
         $cartId = $cart['id'] ?? $this->createCart();
 
         $item = $this->itemModel->where('cart_id', $cartId)->where('product_id', $productId)->first();
+       
         
         $newQty = $qty ?? 1;//$item ? $item['quantity'] + $qty : $qty;
 
@@ -215,10 +216,11 @@ class CartService
             
                 if ($addon) {
                     // if addon exist already in cart 
-                    $existingAddon = $this->cartAddonItemsModel->where('cart_item_id', $item['id'])->where('addon_id', $addon['id'])->first();
+                  //  $existingAddon = $this->cartAddonItemsModel->where('cart_item_id', $item['id'])->where('addon_id', $addon['id'])->first();
+                  $existingAddon = $this->cartAddonItemsModel->where('addon_id', $addon['id'])->first();
                     //remove old add on items 
                     $fromColoursIds = array_filter($data['addon_ids']);
-                    $existingAddonItm = $this->cartAddonItemsModel->where('cart_item_id', $item['id'])->findColumn('addon_id');
+                    $existingAddonItm = $this->cartAddonItemsModel->where('addon_id', $addon['id'])->findColumn('addon_id');
                     if(!empty($existingAddonItm)){
                         $oldaddondata  = array_diff($existingAddonItm, $fromColoursIds);
                         if(!empty($oldaddondata)){
@@ -237,7 +239,7 @@ class CartService
                         $basePrice += $addon['addon_price'];
                     } else {
                         $this->cartAddonItemsModel->insert([
-                            'cart_item_id' => $item['id'],
+                            'cart_item_id' => $item['id'] ?? '',
                             'addon_id' => $addon['id'],
                             'addon_price' => $addon['addon_price'],
                             'addon_name' => $addon['addon_name'],
