@@ -95,7 +95,7 @@ class ProductService
             }
         }
 
-        //font
+        //font 
         if(!empty($fontId)){
             $font = $this->productFont($fontId);
             if($font){
