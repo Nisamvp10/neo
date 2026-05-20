@@ -183,9 +183,9 @@ $pricedata = findProductPrice($product['id']);
                                         <div class="category flex-wrap mt-4 d-flex py-3 bor-top bor-bottom align-items-center">
                                             <h4 class="pe-3">Size :</h4>
                                             <?php foreach($productSize as $key=> $size):?>
-                                                <div class="board-size-list sizeItem <?=($defaultSizeId == $size['id']) ? 'active' : '' ?> ">
+                                                <div class="board-size-list sizeItem <?=($defaultSizeId == $size['id']) ? 'active' : '' ?> " data-width="<?= $size['width'] ?? ''; ?>" data-height="<?= $size['height'] ?? ''; ?>">
                                                 <input class="sizeRadio visually-hidden" type="radio" name="size_id" value="<?= $size['id'] ?? ''; ?>" id=""  <?= ($key == 0) ? 'checked' : '' ?>>
-                                                <label class="" for=""><?= $size['width'].' X '.$size['height'] ?? ''; ?></label></div>
+                                                <label class="" for=""><span class="sizeText"><?= $size['width'].' X '.$size['height'] ?? ''; ?></span></label></div>
                                             <?php endforeach;?>
                                         </div>
                                         <?php endif;?>

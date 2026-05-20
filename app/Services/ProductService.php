@@ -51,6 +51,10 @@ class ProductService
         $font = $this->fontsModel->where(['id'=> $fontId])->get()->getRowArray();
         return $font;
     }
+    private function getmySizePrice($productId){
+        $size = $this->productSizeModel->where('product_id', $productId)->orderBy('extra_price', 'ASC')->limit(1)->get()->getRowArray();
+        return $size;
+    }
     public function calculateProductPrice($postData) {
        $productId = $postData['product_id'];
        $addonIds = (isset($postData['addon_ids'])) ? $postData['addon_ids'] : [];

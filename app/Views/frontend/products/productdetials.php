@@ -189,6 +189,23 @@ $(document).on('click', '.font-style', function () {
 $('#typeofGrapgy').on('keyup change',function(){
     calculatePrice();
     drawText();
+
+     let text = $(this).val().trim();
+     let len = text.replace(/\s+/g,'').length;
+    if(len < 1){
+        len = 1;
+    }
+
+    $('.sizeItem').each(function(){
+
+        let width = parseFloat($(this).data('width'));
+        let height = parseFloat($(this).data('height'));
+        let newWidth = (width * len).toFixed(1);
+        $(this).find('.sizeText').text(newWidth +' X ' +height);
+
+    });
+
+
 });
 function calculatePrice(){
     // PRODUCT ID
