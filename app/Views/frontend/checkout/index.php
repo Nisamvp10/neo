@@ -3,17 +3,13 @@
         <!-- breadcrumb-area -->
    <section class="page-banner bg-image pt-130 pb-130" data-background="<?=base_url('public/assets/template/');?>assets/images/inner-banner.jpg">
             <div class="container">
-                <h2 class="wow fadeInUp mb-15" data-wow-duration="1.1s" data-wow-delay=".1s">Checkout
-
-</h2>
+                <h2 class="wow fadeInUp mb-15" data-wow-duration="1.1s" data-wow-delay=".1s">Checkout</h2>
                 <div class="breadcrumb-list wow fadeInUp" data-wow-duration="1.3s" data-wow-delay=".3s">
                     <a href="#" class="primary-hover"><i class="fa-solid fa-house me-1"></i> Home <i
                             class="fa-regular text-white fa-angle-right"></i></a>
                     <a href="#" class="primary-hover">products <i
                             class="fa-regular text-white fa-angle-right"></i></a>
-                    <span> Checkout
-
-</span>
+                    <span> Checkout</span>
                 </div>
             </div>
         </section>
