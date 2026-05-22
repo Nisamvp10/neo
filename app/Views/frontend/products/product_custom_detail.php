@@ -147,7 +147,7 @@ $pricedata = findProductPrice($product['id']);
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <textarea class="typeofGrapgy" id="typeofGrapgy" rows="2" cols="10" name="text"></textarea>
+                                                <textarea class="typeofGrapgy" id="typeofGrapgy" rows="2" cols="5" name="text"></textarea>
                                             </div>
                                         </div>
                                      

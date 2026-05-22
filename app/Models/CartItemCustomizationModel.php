@@ -21,6 +21,7 @@ class CartItemCustomizationModel extends Model
      'size_price',
      'preview_image',
      'calculated_price',
+     'cust_datas',
      'created_at',
      'updated_at'
     ];

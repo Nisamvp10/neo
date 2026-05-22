@@ -261,7 +261,7 @@ class CartService
             'size_id'     => isset($data['size_id']) ? $data['size_id'] : '',
             'color_id'    => isset($data['color_id']) ? $data['color_id'] : '',
             'font_id'     => isset($data['font_id']) ? $data['font_id'] : '',
-            'custom_text' => trim($data['custom_text'] ?? ''),
+            'custom_text' => trim($data['text'] ?? ''),
             'addons'      => $addonIds
 
         ]));
@@ -270,25 +270,61 @@ class CartService
 
         if(!empty($data['size_id']) || !empty($data['color_id']) || !empty($data['font_id']) || !empty($data['custom_text']) || !empty($data['preview_image']) || !empty($data['calculated_price'])){
             //check exist data from database 
-            $exisitCartItemCustomization = $this->cartItemCustomizationModel->where('cart_item_id', $cartId)->first();
+            $sutmBasePrice = 0;
+            $fontExtraPrice = 0;
+            $size = $this->productService->productSizeByid($data['size_id']);
+            $exisitCartItemCustomization =[];
+            if(!empty($item)){
+                 $exisitCartItemCustomization = $this->cartItemCustomizationModel->where('cart_item_id', $item['id'])->first();
+            }
             if(!empty($data['color_id'])){
                 $color = $this->productService->productColorByIds($data['color_id']);
                 $data['color_name'] = $color['color_name'];
                 $data['color_price'] = $color['extra_price'];
+                $sutmBasePrice += $color['extra_price'];
             }
             if(!empty($data['size_id'])){
-                $size = $this->productService->productSizeByid($data['size_id']);
+               
                 $data['size_name'] = $size['size_name'];
                 $data['size_price'] = $size['extra_price'];
+                $sutmBasePrice += $size['extra_price'];
             }
             if(!empty($data['font_id'])){
                 $font = $this->productService->productFont($data['font_id']);
                 $data['font_name'] = $font['font_name'];
-                $data['font_price'] = $font['extra_price'];
+                $data['font_price'] = $font['extra_letter_price'];
+                $fontExtraPrice = $font['extra_letter_price'];
+                $sutmBasePrice += $font['base_price'];
             }
         
             //normal product
-          
+            $textLength = 0;
+            if(isset($data['text'])){
+                $textLength = trim($data['text']);
+                $textLength = preg_replace('/\s+/', '', $textLength);
+                $textLength = strlen($textLength);
+                $sutmBasePrice += ($textLength * $fontExtraPrice);
+            }
+
+            $sizeCalculated = ($textLength > 0) ? ($size['width'] * $textLength) : $size['width'] ?? $size['width'];
+            $cust_datas = [
+                'font' => $data['font_name'] ?? '',
+                'color' => $data['color_name'] ?? '',
+                'size' => [
+                    'size_id' => $data['size_id'] ?? '',
+                    'size_name' => $data['size_name'] ?? '',
+                    'size_price' => $data['size_price'] ?? '',
+                    'width' => $sizeCalculated,
+                    'height' => $size['height'] ?? $size['height'],
+                    'strlen' => $textLength,
+                ],
+                'custom_text' => $data['text'] ?? '',
+                'calculated_price' => $sutmBasePrice ?? 0
+            ];
+            
+          $customTxt = $data['text'] ?? '';
+          $customTxt = trim($customTxt);
+
             $custmizeData = [
                 'size_id' => $data['size_id'] ?? '',
                 'size_name' => $data['size_name'] ?? '',
@@ -299,16 +335,16 @@ class CartService
                 'font_id' => $data['font_id'] ?? '',
                 'font_name' => $data['font_name'] ?? '',
                 'font_price'=>$data['font_price'] ?? '',
-                'custom_text' => $data['custom_text'] ?? '',
+                'custom_text' => $customTxt,
                 'preview_image' => $data['preview_image'] ?? '',
-                'calculated_price' => $data['calculated_price'] ?? '',
+                'calculated_price' => $sutmBasePrice ?? 0,
+                'cust_datas' => json_encode($cust_datas),
             ];
             if($exisitCartItemCustomization){
-
                 $this->cartItemCustomizationModel->update($exisitCartItemCustomization['id'],$custmizeData);
             }else{
-                $custmizeData['cart_item_id'] = $cartId;
-                $this->cartItemCustomizationModel->insert($custmizeData);
+               // $custmizeData['cart_item_id'] = $cartId;
+               // $this->cartItemCustomizationModel->insert($custmizeData);
             }
         }
 
@@ -340,10 +376,11 @@ class CartService
                 'quantity' => $qty,
                 'created_at' => date('Y-m-d H:i:s')
             ]);
+
+            $custmizeData['cart_item_id'] = $this->itemModel->getInsertID();
+            $this->cartItemCustomizationModel->insert($custmizeData);
+
         }
-
-
-
         return [
             'status' => true,
             'message' =>'Added to cart',

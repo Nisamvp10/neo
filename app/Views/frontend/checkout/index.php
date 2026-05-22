@@ -1,29 +1,26 @@
 <?= view('frontend/inc/header') ?>
     <main class="main-area fix">
         <!-- breadcrumb-area -->
-        <section class="breadcrumb__area breadcrumb__bg" data-background="<?=base_url('public/assets/template/');?>assets/img/bg/sd_bg.jpg">
+   <section class="page-banner bg-image pt-130 pb-130" data-background="<?=base_url('public/assets/template/');?>assets/images/inner-banner.jpg">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-10">
-                        <div class="breadcrumb__content">
-                            <h2 class="title">Checkout</h2>
-                            <nav class="breadcrumb">
-                                <span property="itemListElement" typeof="ListItem">
-                                    <a href="index-2.html">Home</a>
-                                </span>
-                                <span class="breadcrumb-separator">|</span>
-                                <span property="itemListElement" typeof="ListItem">Checkout</span>
-                            </nav>
-                        </div>
-                    </div>
+                <h2 class="wow fadeInUp mb-15" data-wow-duration="1.1s" data-wow-delay=".1s">Checkout
+
+</h2>
+                <div class="breadcrumb-list wow fadeInUp" data-wow-duration="1.3s" data-wow-delay=".3s">
+                    <a href="#" class="primary-hover"><i class="fa-solid fa-house me-1"></i> Home <i
+                            class="fa-regular text-white fa-angle-right"></i></a>
+                    <a href="#" class="primary-hover">products <i
+                            class="fa-regular text-white fa-angle-right"></i></a>
+                    <span> Checkout
+
+</span>
                 </div>
             </div>
-          
         </section>
 
 
-<div class="checkout-wrapper section-padding fix checkout__area section-py-150">
-    <div class="container">
+  <section class="checkout-area pt-130 pb-130">
+            <div class="container">
             <div class="row ">
                 <div class="col-lg-8  col-sm-12">
 

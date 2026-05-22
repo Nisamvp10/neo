@@ -55,9 +55,6 @@ display=swap" rel="stylesheet">
                             <p class="pb-4 text-justify">
                                 Neon Attack’s neon signs are handcrafted with advanced 2nd gen LED on high-quality 6MM transparent acrylic. Energy-efficient, durable, and easy to install—perfect for any space!
 Neon Attack’s neon signs are handcrafted with advanced 2nd gen LED on high-quality 6MM transparent acrylic. Energy-efficient, durable, and easy to install—perfect for any space!
-
-
-
                             </p>
                             <p class="pb-4 text-justify"> Neon Attack’s neon signs are handcrafted with advanced 2nd gen LED on high-quality 6MM transparent acrylic. Energy-efficient, durable, and easy to install—perfect for any space!
 
@@ -95,11 +92,6 @@ Neon Attack’s neon signs are handcrafted with advanced 2nd gen LED on high-qua
             </div>
             <!-- description review area end here -->
         </section>
-
-
-
-
-    
 
 <?= view('frontend/inc/footerLink') ?>
 <script src="<?=base_url('public/assets/js/cart.js')?>"></script>

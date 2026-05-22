@@ -32,7 +32,7 @@
                             <span class="absolute badge-count" id="cartCount">0</span>
                             <i class="fa-regular fa-cart-shopping"></i>
                         </span>
-                        <a href="#0" class="c__one ">
+                        <a href="<?=base_url('cart');?>" class="c__one ">
                             <span class="text-white">
                                 Rs 
                             </span>
@@ -79,7 +79,7 @@
                     </li>
                 
                     <li>
-                        <a href="#">Customise Your Neon Light</a>
+                        <a href="<?=base_url('collections/customize')?>">Customise Your Neon Light</a>
                     </li>
                  
                     <li>

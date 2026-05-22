@@ -21,20 +21,18 @@
           
         </section>
 
-     <div class="checkout-wrapper section-padding fix checkout__area section-py-150">
+     <section class="cart-page pt-130 pb-130">
+            <div class="container">
 
-        <div class="container">
-            <div class="row">
-               <div class="col-lg-8 col-md-8 col-sm-12 col-12" id="cartItems">
-                   
-                   
-                </div>
-                <div class="col-sm-12 col-lg-4 col-md-4 " id="cartSubtotal">
-                </div>
+                <div class="shopping-cart radius-10 bor sub-bg">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-12" id="cartItems"></div>
+                        <div class="col-sm-12 col-lg-4 col-md-4 " id="cartSubtotal"></div>
+                    </div>
             </div>
      
         </div>
-    </div>
+</section>
 </main>
 <?= view('frontend/inc/footerLink') ?>
 <script src="<?=base_url('public/assets/template/');?>assets/js/count.js"></script>
