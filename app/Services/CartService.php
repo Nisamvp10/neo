@@ -199,8 +199,6 @@ class CartService
         $cartId = $cart['id'] ?? $this->createCart();
 
         $item = $this->itemModel->where('cart_id', $cartId)->where('product_id', $productId)->first();
-       
-        
         $newQty = $qty ?? 1;//$item ? $item['quantity'] + $qty : $qty;
 
         if ($newQty > $stockItem['current_stock']) {
@@ -210,6 +208,8 @@ class CartService
         // add add-ons
         $addons = $data['addon_ids'] ?? [];
         $addOnTotal = 0;
+        $addonsInsertIds = [];
+        $addonDatas = [];
         if(!empty($data['addon_ids'])){
             foreach ($addons as $addonId => $adonitemId) {
                 $addon = $this->productService->findAddon($adonitemId);
@@ -238,13 +238,14 @@ class CartService
                         ]);
                         $basePrice += $addon['addon_price'];
                     } else {
-                        $this->cartAddonItemsModel->insert([
-                            'cart_item_id' => $item['id'] ?? '',
+                        $addonDatas[] = [
+                            //'cart_item_id' => $item['id'] ?? '',
                             'addon_id' => $addon['id'],
                             'addon_price' => $addon['addon_price'],
                             'addon_name' => $addon['addon_name'],
                             'created_at' => date('Y-m-d H:i:s')
-                        ]);
+                        ];
+                        //$addonsInsertIds[] = $this->cartAddonItemsModel->insertID;
                         $basePrice += $addon['addon_price'];
                     }
                 }
@@ -376,8 +377,16 @@ class CartService
                 'quantity' => $qty,
                 'created_at' => date('Y-m-d H:i:s')
             ]);
+            $itemId = $this->itemModel->getInsertID();
+            if(!empty($addonDatas)){
+               
+                foreach ($addonDatas as $key => $addonData) {
+                    $addonData['cart_item_id'] = $itemId;
+                    $this->cartAddonItemsModel->insert($addonData);
+                }
+            }
 
-            $custmizeData['cart_item_id'] = $this->itemModel->getInsertID();
+            $custmizeData['cart_item_id'] = $itemId;
             $this->cartItemCustomizationModel->insert($custmizeData);
 
         }
@@ -535,11 +544,13 @@ class CartService
                 'id'            => $item['id'],
                 'product_id'    => $item['product_id'],
                 'product_title' => $product['product_title'],
+                'slug'          => $product['slug'],
                 'category_name' => $category['category'] ?? null,
                 'price'         => $item['price'],
                 'quantity'      => $item['quantity'],
                 'subtotal'      => $item['subtotal'],
-                'image'         => $product['product_image']
+                'image'         => $product['product_image'],
+                'info'          => $this->cartItemCustomizationModel->select('cust_datas')->where('cart_item_id', $item['id'])->first()
             ];
         }
 

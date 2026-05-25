@@ -11,12 +11,12 @@
             <div class="modal-content">
                 <div class="row step p-3" id="step1">
                 <div class="modal-header">
-                    <h2 class="modal-title w-100 text-center" id="loginModalLabel">Login</h2>
+                    <h2 class="modal-title w-100 text-center text-black" id="loginModalLabel">Login</h2>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body text-black">
 
 
                     <form action="#" id="loginForm" method="post">
@@ -40,7 +40,7 @@
                                 Login
                             </button>
                             <div class="mt-2">
-                                <p>Don't have an account? <a href="#" onclick="nextStep(2)">Create Account</a></p>
+                                <p>Don't have an account? <a href="#" class="text-black" onclick="nextStep(2)">Create Account</a></p>
                             </div>
                         </div>
 

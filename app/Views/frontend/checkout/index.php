@@ -14,11 +14,12 @@
             </div>
         </section>
 
-
-  <section class="checkout-area pt-130 pb-130">
+ <section class="checkout-area pt-130 pb-130">
             <div class="container">
-            <div class="row ">
+                <div class="shopping-cart radius-10 bor sub-bg">
+                    <div class="row">
                 <div class="col-lg-8  col-sm-12">
+
 
 
                     <!--  -->
@@ -32,86 +33,93 @@
                                 <i class="fa fa-plus float-right "></i>
                             </button>
 
-                            <div id="collapseaddress" class="collapse show"
-                                data-parent="#accordion">
+                            <div id="collapseaddress" class="collapse show" data-parent="#accordion">
                                 <div class="card-body">
                                     <!-- create a form here user email address with shipping address -->
                                     <form action="" id="addShippingAddressForm2">
                                         <label class="d-flex justify-content-end logbtn"  data-toggle="modal" data-target="#loginModal">Login</label>
-                                        <div class="form-group">
-                                            <label for="email">Email</label>
-                                            <!-- Enter Email id or Mobile number -->
-                                            <input type="text" name="shipping_email_id" autocomplete="email" class="form-control" id="user_email" placeholder="Enter email">
-                                             <div id="user_emailError" class="text-danger invalid-feedback"></div>
+
+                                         <div class="checkout__item-left sub-bg">
+                                            <h3 class="mb-40">Billing Details</h3>
+
+                                            <div class="form-group">
+                                                <label class="mb-10" for="name">Your Name *</label>
+                                                <input class="mb-20" name="name" placeholder="Enter your name" id="name" type="text">
+                                                <div class="text-danger" id="nameError"></div>
+                                            </div>
+                                            <div class="form-group">
+                                                    <label class="mb-10 w-100" for="phone">Phone *</label>
+                                                     <input type="text" class="form-control w-100" autocomplete="tel" id="shipping_phone" name="shipping_phone" placeholder="Phone Number" >
+                                                    <div id="shipping_phoneError" class="text-danger invalid-feedback"></div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label class="mb-10" for="email">Email Address *</label>
+                                                <input class="mb-20" name="email" placeholder="Enter your email" id="email" type="email">
+                                                <div class="text-danger" id="emailError"></div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="mb-10" for="streetAddress">Street Address *</label>
+                                                <input placeholder="Enter your shipping address" class="mb-10" id="streetAddress" name="streetAddress" type="text">
+                                                <div class="text-danger" id="streetAddressError"></div>
+                                            </div>
+                                          
+                                           
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label class="mb-10" for="state">State *</label>
+                                                    <input class="mb-20" placeholder="Enter your state" id="state" name="state" type="text">
+                                                    <div class="text-danger" id="stateError"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label class="mb-10" for="city">Town / City *</label>
+                                                    <input class="mb-20" placeholder="Enter your city" id="city" name="city" type="text">
+                                                    <div class="text-danger" id="cityError"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label class="mb-10" for="zipCode">ZIP Code *</label>
+                                                    <input class="mb-20" placeholder="Enter your zip code" id="zipCode" name="zipCode" type="number">
+                                                    <div class="text-danger" id="zipCodeError"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="mb-10" for="country">Country *</label>
+                                                    <input class="mb-20" placeholder="Enter your Country" id="country" name="country" type="text">
+                                                    <div class="text-danger" id="countryError"></div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="form-group mt-2 mb-2">
-                                            <label>Phone</label>
-                                            <input type="text" class="form-control w-100" autocomplete="tel" id="shipping_phone" name="shipping_phone" placeholder="Phone Number" >
-                                            <div id="shipping_phoneError" class="text-danger invalid-feedback"></div>
-                                        </div>
-                                       
-                                        <div class="form-group">
-                                            <label>Name</label>
-                                            <input type="text" class="form-control" autocomplete="name" name="shipping_name" id="shipping_name" placeholder="Name">
-                                            <input type="hidden" name="shipping_address_id" id="shipping_address_id" value="">
-                                            <div id="shipping_nameError" class="text-danger invalid-feedback"></div>
-                                        </div>
+                                            <div class="form-group">
+                                                <label class="mb-10" for="phone">Order Notes (Optional)</label>
+                                                <textarea placeholder="Note About Your Order . . ." name="notes" id="notes"></textarea>
+                                            </div>
                                         
-                                        <div class="form-group">
-                                            <label>Address</label>
-                                            <textarea class="form-control" name="shipping_address" placeholder="Address" autocomplete="street-address" id="shipping_address" rows="3"></textarea>
-                                            <div id="shipping_addressError" class="text-danger invalid-feedback"></div>
-                                        </div>
+                       
 
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label>City</label>
-                                                    <input type="text" class="form-control" placeholder="City" name="shipping_city" autocomplete="city" id="shipping_city">
-                                                    <div id="shipping_cityError" class="text-danger invalid-feedback"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label>State</label>
-                                                    <input type="text" class="form-control" placeholder="State" autocomplete="state" name="shipping_state" id="shipping_state">
-                                                    <div id="shipping_stateError" class="text-danger invalid-feedback"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group mb-2">
-                                                    <label>Pincode</label>
-                                                    <input type="text" class="form-control" placeholder="Pincode" autocomplete="postal-code" name="shipping_pincode" id="shipping_pincode">
-                                                    <div id="shipping_pincodeError" class="text-danger invalid-feedback"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label>Country</label>
-                                                    <input type="text" class="form-control" placeholder="Country" name="shipping_country" autocomplete="country" id="shipping_country">
-                                                    <div id="shipping_countryError" class="text-danger invalid-feedback"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="text-right">
-                                            <button type="reset" class="btn btn-secondary" data-dismiss="modal">
-                                                Reset
-                                            </button>
-                                            <button type="submit" class="btn btn-primary" id="saveAddress">
+                                        <div class="text-right d-flex align-items-center justify-content-between">
+                                            <button type="submit" class="btn theme_btn btn-primary" id="saveAddress">
                                                 Save Address
                                             </button>
+                                            <button type="reset" class="btn theme_btn btn-secondary reset">
+                                                Reset
+                                            </button>
+                                            
                                         </div>
+                                    </div>
                                     </form>
                                     <div id="shippingAddress"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card mb-3">
-                            <button class="card-header  border collapsed card-link bg-white d-flex align-items-center justify-content-between" data-toggle="collapse" data-target="#collapseTwo">
+                        <div class=" mb-3">
+                            <button class="card-header  border collapsed card-link  d-flex align-items-center justify-content-between" data-toggle="collapse" data-target="#collapseTwo">
 
                                 <div class="header-title float-left">
                                     <b class="header-title float-left">
@@ -137,7 +145,7 @@
                     <div class="" id="cartSubtotal"> </div>
                 </div>
             </div>
-        
+        </div>
         <!-- <h4 class="mb-4">Your Order</h4> -->
         
      

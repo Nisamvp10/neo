@@ -53,7 +53,7 @@
     }
 
 
-   $(document).on('submit','#cartForm', function (e) {
+   $(document).on('submit','#cartItemsForm', function (e) {
     e.preventDefault();
     const formData = $(this).serialize();
     $.ajax({

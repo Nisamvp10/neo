@@ -35,6 +35,7 @@
     <!-- Magnigic popup css -->
     <link rel="stylesheet" href="<?=base_url('public/assets/template/assets/css/magnific-popup.css');?>">
     <!-- Animate css -->
+    <link href="https://cdn.jsdelivr.net/npm/toastr@2.1.4/build/toastr.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?=base_url('public/assets/template/assets/css/animate.css');?>">
     <!-- Nice select css -->
     <link rel="stylesheet" href="<?=base_url('public/assets/template/assets/css/nice-select.css');?>">

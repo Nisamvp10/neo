@@ -189,7 +189,6 @@ $('#typeofGrapgy').on('keyup change',function(){
     }
 
     $('.sizeItem').each(function(){
-
         let width = parseFloat($(this).data('width'));
         let height = parseFloat($(this).data('height'));
         let newWidth = (width * len).toFixed(1);

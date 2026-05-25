@@ -72,10 +72,7 @@ class ProductService
        if($productInfo) {
             $basePrice = $productInfo['price'];
        }
-       if($quantity > 1){
-            $basePrice *= $quantity;
-       }
-
+       
        if(!empty($productSizeId)){
             $size = $this->productSize($productSizeId);
             if($size){
@@ -112,6 +109,9 @@ class ProductService
                 }
             }
         }
+        if($quantity > 1){
+            $basePrice *= $quantity;
+       }
         
         if($productInfo['compare_price'] > 0) {
             if($productInfo['price_offer_type'] == 1){

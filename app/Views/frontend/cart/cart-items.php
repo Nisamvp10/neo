@@ -6,14 +6,28 @@
         
         <?php
         foreach ($result as $row) {
+            //{"font":"Raleway","color":"Orange","size":{"size_id":"63","size_name":"Large","size_price":"450.00","width":27.5,"height":"15","strlen":5},"custom_text":"DEMOS","calculated_price":7650}
+           $info = $row['info'] ?? [];
+           $datas = json_decode($info['cust_datas'], true);
         ?>
-        <form method="post" id="cartForm">
+        <form method="post" id="cartItemsForm">
          <input type="hidden" value="<?= encryptor($row['id']) ?>"  name="item_id[]" />
+         <input type="hidden" value="<?= $row['product_id'] ?>"  name="product_id[]" />
         <div class="product p-4 bor-top bor-bottom d-flex justify-content-between align-items-center">
                         
             <div class="product-details d-flex align-items-center">
                 <img src="<?= validImg($row['image']) ?>" alt="image">
-                <h4 class="ps-4 text-capitalize"><?= $row['product_title'] ?></h4>
+                <h4 class="ps-4 text-capitalize"><a href="<?=base_url('product-details/'.$row['slug'])?>">
+                    <?= $row['product_title'] ?></a></h4>
+                    <?php if(!empty($datas)){?>
+                        <div class="mt-2 cust_info">
+                           <?=(!empty($datas['custom_text'])) ? '<p>Custom Text: '.$datas['custom_text'].'</p>' : ''?>
+                           <?=(!empty($datas['font'])) ? '<p>Font: '.$datas['font'].'</p>' : ''?>
+                           <?=(!empty($datas['color'])) ? '<p style="color:'.$datas['color'].'">Color: '.$datas['color'].'</p>' : ''?>
+                           <?=(!empty($datas['size']['size_name'])) ? '<p>Size: '.$datas['size']['size_name'].'</p>' : ''?>
+                           <?=(!empty($datas['size']['width'])) ? '<p>W-H: '.$datas['size']['width'].'x'.$datas['size']['height'].'</p>' : ''?>
+                        </div>
+                    <?php } ?>
             </div>
             <div class="product-price"><?= money_format_custom($row['price']) ?></div>
             <div class="product-quantity product_quantity">

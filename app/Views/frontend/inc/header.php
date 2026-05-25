@@ -146,7 +146,7 @@ That enables us to create 100% customized Neon Signs as per your preference. Jus
 
 
         <!-- Preloader area start -->
-    <div class="loading">
+    <div class="loading d-none">
         <span class="text-capitalize">L</span>
         <span>o</span>
         <span>a</span>

@@ -3641,7 +3641,7 @@ input {
 
 .checkout__item-right {
   border-radius: 10px;
-  padding: 30px;
+  padding: 10px;
 }
 
 .checkout__item-right ul li {
@@ -5622,7 +5622,7 @@ canvas {
 
 }
 
-#cartForm .plus-minus-input {
+#cartItemsForm .plus-minus-input {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -5638,7 +5638,7 @@ canvas {
   border-bottom-right-radius: 15px !important;
 }
 
-#cartForm .plus-minus-input input {
+#cartItemsForm .plus-minus-input input {
   position: relative;
   top: 0;
   transform: none;
@@ -5685,4 +5685,73 @@ button.theme-btn.style6:hover {
 .checkout-btn:hover {
   color: #fff;
   opacity: 0.5;
+}
+
+.cust_info p {
+  font-size: 12px;
+  line-height: 2em;
+  min-width: 100px;
+}
+
+#accordion .card-header {
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+
+}
+
+.couponcodeInput {
+  height: 46px;
+  margin: 0;
+  width: 100%;
+  border-radius: 10px 0px 0 10px;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+button.applyCoupon {
+  margin: 0 !important;
+  min-width: 100px !important;
+  /* border-radius: 10px; */
+  border: 1px #ddd solid !important;
+  color: #fff !important;
+  overflow: hidden;
+  border-radius: 0 10px 10px 0 !important;
+}
+
+button.applyCoupon:hover {
+  color: #fff !important;
+  background-color: #303030;
+}
+
+.iti--separate-dial-code {
+  width: 100%;
+  color: #fff;
+}
+
+.iti--separate-dial-code input:focus {
+  background: #1a1a1a !important;
+  color: #fff !important;
+}
+
+.theme_btn {
+  padding: 10px;
+  border: 1px #d1d1d1 solid;
+  border-radius: 10px;
+  margin-top: 17px;
+  text-align: center;
+  cursor: pointer;
+  background: #303030;
+  min-width: 150px;
+}
+
+.reset {
+  color: #fd5151;
+  background: transparent;
+  border: none;
+  width: fit-content;
+  min-width: fit-content;
 }
