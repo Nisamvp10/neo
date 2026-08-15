@@ -4,3 +4,4 @@ writable/debugbar
 writable/logs
 writable/*
 uploads/*
+vendor/*
