@@ -2,3 +2,5 @@ node_modules
 .env
 writable/debugbar
 writable/logs
+writable/*
+uploads/*
