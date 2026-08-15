@@ -30,14 +30,14 @@ class ShippingAddressController extends BaseController
         $sessionId = get_cookie('cart_session');
 
         $rules = [
-            'shipping_name' => 'required',
-            'shipping_phone' => 'required|min_length[10]|max_length[10]',
-            'shipping_email_id' => 'required|valid_email',
-            'shipping_address' => 'required',
-            'shipping_city' => 'required',
-            'shipping_state' => 'required',
-            'shipping_pincode' => 'required|min_length[6]|max_length[6]',
-            'shipping_country' => 'required',
+            'name' => 'required',
+            'shipping_phone' => 'required|min_length[10]|max_length[20]',
+            'email' => 'required|valid_email',
+            'streetAddress' => 'required',
+            'city' => 'required',
+            'state' => 'required',
+            'zipCode' => 'required|min_length[6]|max_length[6]',
+            'country' => 'required',
         ];
 
         if (!$this->validate($rules)) {
@@ -48,7 +48,7 @@ class ShippingAddressController extends BaseController
         }
 
         $phone = $this->request->getPost('shipping_phone');
-        $email = $this->request->getPost('shipping_email_id');
+        $email = $this->request->getPost('email');
 
         // 🔍 Check user
         $user = $this->userModel->where('phone', $phone)->where('email', $email)->first();
@@ -58,7 +58,7 @@ class ShippingAddressController extends BaseController
         } else {
             // 🆕 Create new user
             $this->userModel->insert([
-                'name' => $this->request->getPost('shipping_name'),
+                'name' => $this->request->getPost('name'),
                 'phone' => $phone,
                 'email' => $email,
                 'status' => 1,
@@ -80,14 +80,14 @@ class ShippingAddressController extends BaseController
         $data = [
             'user_id' => $userId ?? 0,
             'session_id' => $sessionId,
-            'full_name' => $this->request->getPost('shipping_name'),
+            'full_name' => $this->request->getPost('name'),
             'phone' => $phone,
             'email' => $email,
-            'address_line1' => $this->request->getPost('shipping_address'),
-            'city' => $this->request->getPost('shipping_city'),
-            'state' => $this->request->getPost('shipping_state'),
-            'postal_code' => $this->request->getPost('shipping_pincode'),
-            'country' => $this->request->getPost('shipping_country'),
+            'address_line1' => $this->request->getPost('streetAddress'),
+            'city' => $this->request->getPost('city'),
+            'state' => $this->request->getPost('state'),
+            'postal_code' => $this->request->getPost('zipCode'),
+            'country' => $this->request->getPost('country'),
             'is_default' => 1,
             'created_at' => date('Y-m-d H:i:s'),
         ];
@@ -166,5 +166,35 @@ class ShippingAddressController extends BaseController
             'success' => true,
             'message' => 'Default address updated'
         ]);
+    }
+
+    
+    public function addressDelete() {
+         if (!$this->request->isAJAX()) {
+            return $this->response->setJSON(['status' => false]);
+        }
+
+        $model = new ShippingAddressModel();
+
+        $id =decryptor($this->request->getPost('id'));
+        if(!empty($id)){
+            if($model->delete($id)){
+                return $this->response->setJSON([
+                    'success' => true,
+                    'message' => 'Address deleted'
+                ]);
+            }
+            else{
+                return $this->response->setJSON([
+                    'success' => false,
+                    'message' => 'Opps! Address not deleted try again'
+                ]);
+            }
+        } else{
+            return $this->response->setJSON([
+                'success' => false,
+                'message' => 'Opps! Address not deleted try again'
+            ]);
+        }
     }
 }

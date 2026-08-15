@@ -252,14 +252,20 @@ $(document).ready(function () {
     const input = document.querySelector("#shipping_phone") ?? null;
     if (!input) return;
     // Initialize intlTelInput and store instance in `iti`
+    // const iti = window.intlTelInput(input, {
+    //     separateDialCode: true,
+    //     initialCountry: "in",
+    //     preferredCountries: ["in"],
+    //     nationalMode: false,
+    //     utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+    // });
+
     const iti = window.intlTelInput(input, {
         separateDialCode: true,
         initialCountry: "in",
-        preferredCountries: ["in"],
-        hiddenInput: "phone_number",
-        //width of the input
-        width: "100%",
+        preferredCountries: ["in", "ae", "us", "gb"],
         nationalMode: false,
+        autoPlaceholder: "polite",
         utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
     });
 
@@ -271,24 +277,42 @@ $(document).ready(function () {
         validMsg.hide();
     }
 
-    input.addEventListener('blur', function () {
-        reset();
-        if (input.value.trim()) {
-            if (iti.isValidNumber()) {
-                const countryData = iti.getSelectedCountryData();
-                if (countryData.iso2 === "in") {
-                    validMsg.show();
-                    $("#phone_country_code").val(countryData.dialCode);
-                } else {
-                    errorMsg.text("Only Indian (+91) numbers allowed.").show();
-                }
-            } else {
-                errorMsg.text("Invalid number").show();
-            }
-        }
-    });
+function updateCountryCode() {
+    const countryData = iti.getSelectedCountryData();
+    $("#phone_country_code").val(countryData.dialCode);
+}
+
+// When typing
+input.addEventListener("input", function () {
+    iti.setNumber(input.value);
+    updateCountryCode();
+});
+
+// When selecting from the dropdown
+input.addEventListener("countrychange", updateCountryCode);
+
+// Set initial value on page load
+updateCountryCode();
+
+    // input.addEventListener('blur', function () {
+    //     reset();
+    //     if (input.value.trim()) {
+    //         if (iti.isValidNumber()) {
+    //             const countryData = iti.getSelectedCountryData();
+    //             if (countryData.iso2 === "in") {
+    //                 validMsg.show();
+    //                 $("#phone_country_code").val(countryData.dialCode);
+    //             } else {
+    //                 errorMsg.text("Only Indian (+91) numbers allowed.").show();
+    //             }
+    //         } else {
+    //             errorMsg.text("Invalid number").show();
+    //         }
+    //     }
+    // });
 
     input.addEventListener('change', reset);
     input.addEventListener('keyup', reset);
 });
+
 </script>

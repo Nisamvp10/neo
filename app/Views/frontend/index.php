@@ -179,8 +179,8 @@
                                                     </div>
 
                                                 </div>
-                                                <a class="product__cart d-block bor-top" href="#0"><i class="fa-regular fa-cart-shopping primary-color me-1"></i>
-                                                    <span>Add to cart</span></a>
+                                                <a class="product__cart d-block bor-top" href="<?= base_url().'product-details/'.$row->slug;?>"><i class="fa-regular fa-eye me-1"></i>
+                                                    <span>View Details</span></a>
                                             </div>
                                         </div>
 

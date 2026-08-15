@@ -1,0 +1,16 @@
+INFO - 2026-05-24 09:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-24 09:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-24 09:07:51 --> ErrorException: Undefined variable $totalTime
+in SYSTEMPATH\Debug\Toolbar\Views\toolbar.tpl.php on line 46.
+ 1 SYSTEMPATH\Debug\Toolbar\Views\toolbar.tpl.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalTime', 'D:\\xamp\\htdocs\\neo\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar\\Views\\toolbar.tpl.php', 46)
+ 2 SYSTEMPATH\Debug\Toolbar.php(512): include('D:\\xamp\\htdocs\\neo\\vendor\\codeigniter4\\framework\\system\\Debug\\Toolbar\\Views\\toolbar.tpl.php')
+ 3 SYSTEMPATH\Debug\Toolbar.php(475): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 4 APPPATH\Config\Events.php(47): CodeIgniter\Debug\Toolbar->respond()
+ 5 SYSTEMPATH\Events\Events.php(154): CodeIgniter\Events\Events::Config\{closure}()
+ 6 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\Events\Events::trigger('pre_system')
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2026-05-24 09:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-24 09:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-24 09:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-24 10:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -10,6 +10,7 @@ document.addEventListener('click', async (e) => {
 
         const btn = e.target.closest('.add-to-cart');
         const productId = btn.dataset.id;
+        console.log(productId)
         let qty = parseInt(document.getElementById('quantity')?.value) || 1;
 
         const response = await fetch(App.getSiteurl() + "cart/add", {

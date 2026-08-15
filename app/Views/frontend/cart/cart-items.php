@@ -38,7 +38,7 @@
                                 <i class="fa fa-minus" aria-hidden="true"></i>
                             </button>
                         </div>
-                        <input class="form-control" type="number" id="itemQty<?= $qty ?>" name="quantity[]" value="<?= $row['quantity'] ?>">
+                        <input class="form-control" type="number"  id="itemQty<?= $qty ?>" name="quantity[]" value="<?= $row['quantity'] ?>">
                         <div class="input-group-button">
                             <button type="button" class="button qty-plus-btn" onclick="plusCartQty(this)" data-quantity="plus"
                                 data-field="itemQty<?= $qty ?>">
@@ -67,7 +67,7 @@
         <?php $qty++;  } ?>
 
 
-    <div class="coupon-inner">
+    <div class="coupon-inner d-none">
      
         <div class="coupon-right">
             <div class="cart_submit">
