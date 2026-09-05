@@ -34,7 +34,7 @@ $defaultitemPrice = $priceInfo['extra_price'];
 $defaultSizeId = $priceInfo['id'];
 // getLowpriceFont
 $defaultFontInfo = getLowpriceFont($product['id']);
-$defaultFontPrice = $defaultFontInfo['base_price'];
+$defaultFontPrice = $defaultFontInfo['base_price'] ?? 0;
 $totalPrice = $productPrice+$defaultitemPrice+$defaultFontPrice ?? 0;
 $defaultFontId = $defaultFontInfo['id'];
 // discount calculation 
