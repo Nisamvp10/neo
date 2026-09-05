@@ -83,20 +83,18 @@
                     </li>
                  
                     <li>
-                        <a href="#">Shop Neon Collection</a>
+                        <a href="#">Neon Sign</a>
                     </li>
                      
                     <li>
-                        <a href="#">Best Sellers</a>
+                        <a href="#">Vibro Series</a>
                     </li>
                      
                     <li>
                         <a href="#">Business Logo</a>
                     </li>
 
-                     <li>
-                        <a href="#">Shark Tank</a>
-                    </li>
+                     
                 </ul>
                 <div class="shipping__item d-none d-sm-flex align-items-center">
                    

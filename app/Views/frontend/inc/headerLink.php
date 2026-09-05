@@ -42,4 +42,27 @@
     <!-- Style css -->
     <link rel="stylesheet" href="<?=base_url('public/assets/template/assets/css/style.css');?>">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Great+Vibes&family=Prosto+One&display=swap" rel="stylesheet">
+    <style>
+    /* font install from folder */
+    @font-face {
+        font-family: 'Delight';
+        src: url('<?=base_url('public/assets/template/assets/fonts/Delight.ttf');?>') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+            font-family: 'Passionate';
+            src: url('<?=base_url('public/assets/template/assets/fonts/Passionate.eot');?>');
+            src: url('<?=base_url('public/assets/template/assets/fonts/Passionate.eot?#iefix')?>') format('embedded-opentype'),
+                url('<?=base_url('public/assets/template/assets/fonts/Passionate.woff2')?>') format('woff2'),
+                url('<?=base_url('public/assets/template/assets/fonts/Passionate.woff')?>') format('woff'),
+                url('<?=base_url('public/assets/template/assets/fonts/Passionate.ttf')?>') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+    }
+    </style>
 </head>

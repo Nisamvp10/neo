@@ -143,8 +143,30 @@ if (!empty($userData)){
                             <span><?=ucwords(getappdata('clients'))?></span>
                         </a>
                     </li>
-                <?php }
-                   if(haspermission('','news')) { ?>
+                    <?php 
+                }
+                if(haspermission('','view_staff')) {  ?>
+                    <li class="nav-item">
+                        <a class="nav-link <?= strpos(uri_string(), 'admin/staff') === 0 && strpos(uri_string(), 'appointments') === false ? 'active' : '' ?>" href="<?= base_url('admin/staff') ?>">
+                        <span class="flex-shrink-0"><svg xmlns="https://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-user "><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="10" r="3"></circle><path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"></path></svg></span>
+                            <span>Staff</span>
+                        </a>
+                    </li>
+                    
+                    <?php 
+                    }
+                    ?>
+                    <li class="nav-item">
+                        <a class="nav-link <?= strpos(uri_string(), 'admin/coupen-code') === 0 && strpos(uri_string(), 'coupen-codes') === false ? 'active' : '' ?>" href="<?= base_url('admin/coupen-code') ?>">
+                        <span class="flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"     viewBox="0 0 24 24" fill="none" stroke="currentColor"     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">        <path d="M2 9a3 3 0 0 1 0 6v1a2 2 0 0 0 2 2h3"></path>        <path d="M22 9a3 3 0 0 0 0 6v1a2 2 0 0 1-2 2h-3"></path>        <rect x="6" y="4" width="12" height="16" rx="2"></rect>        <path d="M9 15l6-6"></path>        <circle cx="9.5" cy="9.5" r=".5"></circle>        <circle cx="14.5" cy="14.5" r=".5"></circle>    </svg>
+                        </span>
+                            <span>Coupen Code</span>
+                        </a>
+                    </li>
+                    
+                <?php 
+                if(haspermission('','news')) { ?>
                     <li class="nav-item disp">
                         <a class="nav-link <?= strpos(uri_string(), 'admin/news') === 0  ? 'active' : '' ?>" href="<?= base_url('admin/news') ?>">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"   class="lucide lucide-newspaper" aria-hidden="true">  <path d="M4 19h16a2 2 0 0 0 2-2V5H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2z"></path>  <path d="M22 5v14a2 2 0 0 1-2 2H4"></path>  <path d="M16 8h2"></path>  <path d="M16 12h2"></path>  <path d="M16 16h2"></path>  <path d="M8 8h6v8H8z"></path></svg>
@@ -181,25 +203,8 @@ if (!empty($userData)){
                     </li>
                     <?php
                 } 
-                
-                if(haspermission('','view_staff')) {  ?>
-                <li class="nav-item">
-                    <a class="nav-link <?= strpos(uri_string(), 'admin/staff') === 0 && strpos(uri_string(), 'appointments') === false ? 'active' : '' ?>" href="<?= base_url('admin/staff') ?>">
-                    <span class="flex-shrink-0"><svg xmlns="https://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-user "><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="10" r="3"></circle><path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"></path></svg></span>
-                        <span>Staff</span>
-                    </a>
-                </li>
-                
-                <?php 
-                }?>
-                <li class="nav-item">
-                    <a class="nav-link <?= strpos(uri_string(), 'admin/coupen-code') === 0 && strpos(uri_string(), 'coupen-codes') === false ? 'active' : '' ?>" href="<?= base_url('admin/coupen-code') ?>">
-                    <span class="flex-shrink-0">
-                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"     viewBox="0 0 24 24" fill="none" stroke="currentColor"     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">        <path d="M2 9a3 3 0 0 1 0 6v1a2 2 0 0 0 2 2h3"></path>        <path d="M22 9a3 3 0 0 0 0 6v1a2 2 0 0 1-2 2h-3"></path>        <rect x="6" y="4" width="12" height="16" rx="2"></rect>        <path d="M9 15l6-6"></path>        <circle cx="9.5" cy="9.5" r=".5"></circle>        <circle cx="14.5" cy="14.5" r=".5"></circle>    </svg>
-                    </span>
-                        <span>Coupen Code</span>
-                    </a>
-                </li>
+                ?>
+              
                 <?php
                 if(haspermission('','investments')) { ?>
                 <li class="nav-item hidden">
