@@ -87,7 +87,8 @@
                     </li>
                      
                     <li>
-                        <a href="#">Vibro Series</a>
+                        <!-- <a href="#">Vibro Series</a> -->
+                         <a href="#">Best Seller</a>
                     </li>
                      
                     <li>
