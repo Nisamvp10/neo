@@ -32,7 +32,7 @@ if(!function_exists('getLowpriceFont')){
        if($productId){
            $productFontsModel = new ProductFontsModel();
            $defaultFont =  $productFontsModel->where('product_id', $productId)->orderBy('base_price', 'ASC')->limit(1)->get()->getRowArray();
-           echo $productFontsModel->getLastQuery();
+          // echo $productFontsModel->getLastQuery();
            return $defaultFont;
        }else{
         return '';
