@@ -92,7 +92,7 @@
                     </li>
                      
                     <li>
-                        <a href="#">Business Logo</a>
+                        <a href="<?=base_url('for-business');?>">Business Logo</a>
                     </li>
 
                      

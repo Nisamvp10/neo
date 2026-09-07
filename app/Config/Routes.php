@@ -296,3 +296,4 @@ $routes->get('faq','CommonController::faq');
 $routes->get('promo','CommonController::promo');
 //collection
 $routes->get('collections/(:any)','CollectionsController::index/$1');
+$routes->get('for-business','BusinessController::index');
