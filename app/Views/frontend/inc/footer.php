@@ -31,11 +31,11 @@
                         <div class="footer__item">
                             <h4 class="footer-title">Company Policy</h4>
                             <ul>
-                                <li><a href="#"><span></span>Terms & Conditions
+                                <li><a href="<?=base_url('terms-conditions');?>"><span></span>Terms & Conditions
 </a></li>
-                                <li><a href="#"><span></span>Privacy Policy</a></li>
-                                <li><a href="#"><span></span>Refund Policy</a></li>
-                                <li><a href="#"><span></span>Shipping Policy</a></li>
+                                <li><a href="<?=base_url('terms-conditions');?>"><span></span>Privacy Policy</a></li>
+                                <li><a href="<?=base_url('terms-conditions');?>"><span></span>Refund Policy</a></li>
+                                <li><a href="<?=base_url('terms-conditions');?>"><span></span>Shipping Policy</a></li>
                                 <li><a href="#"><span></span>FAQs</a></li>
                             </ul>
                         </div>
