@@ -36,7 +36,6 @@ $defaultSizeId = $priceInfo['id'];
 $defaultFontInfo = getLowpriceFont($product['id']);
 $defaultFontPrice = $defaultFontInfo['base_price'] ?? 0;
 $totalPrice = $productPrice+$defaultitemPrice+$defaultFontPrice ?? 0;
-print_r($defaultFontInfo); 
 $defaultFontId = $defaultFontInfo['id'] ?? '';
 // discount calculation 
 $comparePrice = $product['compare_price'] ?? 0;
