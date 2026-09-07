@@ -19,7 +19,7 @@
                         <div class="footer__item">
                             <h4 class="footer-title">Get to Know Us</h4>
                             <ul>
-                                <li><a href="#"><span></span>About Us</a></li>
+                                <li><a href="<?=base_url('about-us');?>"><span></span>About Us</a></li>
                                 <li><a href="#"><span></span>News & Blog</a></li>
                                 <li><a href="#"><span></span>Careers</a></li>
                                 <li><a href="#"><span></span>Investors</a></li>
