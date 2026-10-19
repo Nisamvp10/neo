@@ -39,6 +39,9 @@ class BannerContoller extends Controller {
                 $title = $item['title'];
                 $item['title'] = str_replace('<span> </span>',' ',$title);
                 $item['encrypted_id'] = encryptor($item['id']);
+                $item['image'] = !empty($item['image']) 
+                ? base_url($item['image'])
+                : base_url('uploads/default.png');
             }
         }
 
@@ -50,7 +53,7 @@ class BannerContoller extends Controller {
         $banner = $this->sliderModel->where(['id' => decryptor($id)])->first();
         if ($banner) {
             $banner['image'] = !empty($banner['image']) 
-                ? $banner['image']
+                ? base_url($banner['image'])
                 : base_url('uploads/default.png');
                 if (!empty($banner['title'])) {
                      $banner['title'] = preg_replace('/<\/?span[^>]*>/', '', $banner['title']);
@@ -89,7 +92,7 @@ class BannerContoller extends Controller {
         $buttonName  = $this->request->getPost('button_title');
 
         if($highlight && stripos($bannerTitle,$highlight) !== false) {
-            $bannerTitle = str_replace($highlight,'<span>'.$highlight.'</span>',$bannerTitle);
+            $bannerTitle = str_replace($highlight,'<span class="primary-color">'.$highlight.'</span>',$bannerTitle);
         }
         $file = $this->request->getFile('file');
         $selectedImage = $this->request->getPost('selected_image');
@@ -97,10 +100,10 @@ class BannerContoller extends Controller {
         if ($file && $file->isValid() && !$file->hasMoved()) {
             // Upload new image
             $upload = json_decode($this->imgUploader->uploadimg($file, 'slider'), true);
-            $imagePath = ($upload['status'] == true ? base_url($upload['file']) : '');
+            $imagePath = ($upload['status'] == true ? $upload['file'] : '');
         } else {
             // Keep old image if no new upload
-            $imagePath = $selectedImage;
+            $imagePath = str_replace(base_url(), '', $selectedImage);
         }
 
         $data = [

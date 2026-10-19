@@ -96,43 +96,85 @@
 	// Product slider area start here ***
 	var swiper = new Swiper(".product__slider", {
 		spaceBetween: 24,
-		speed: 300,
+		speed: 600,
 		loop: true,
 		autoplay: {
-			delay: 5000,
+			delay: 4500,
 			disableOnInteraction: false,
+			pauseOnMouseEnter: true,
+		},
+		navigation: {
+			nextEl: ".premium-next",
+			prevEl: ".premium-prev",
 		},
 		pagination: {
 			el: ".product__dot",
 			clickable: true,
 		},
 		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 16,
+			},
 			575: {
 				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			992: {
+				slidesPerView: 3,
+				spaceBetween: 24,
+			},
+			1200: {
+				slidesPerView: 4,
+				spaceBetween: 24,
 			},
 		},
 	});
 	// Product slider area end here ***
 
 	// Gallery slider area start here ***
-	var swiper = new Swiper(".gallery__slider", {
-		spaceBetween: 30,
-		speed: 300,
+	var gallerySwiper = new Swiper(".gallery__slider", {
+		spaceBetween: 24,
+		speed: 500,
 		loop: true,
-		centeredSlides: true,
 		autoplay: {
-			delay: 5000,
+			delay: 4500,
 			disableOnInteraction: false,
+			pauseOnMouseEnter: true,
+		},
+		navigation: {
+			nextEl: ".gallery-next",
+			prevEl: ".gallery-prev",
+		},
+		pagination: {
+			el: ".gallery__dot",
+			clickable: true,
 		},
 		breakpoints: {
-			1300: {
-				slidesPerView: 5,
+			320: {
+				slidesPerView: 1.2,
+				spaceBetween: 16,
+				centeredSlides: true,
 			},
-			991: {
-				slidesPerView: 3,
-			},
-			768: {
+			576: {
 				slidesPerView: 2,
+				spaceBetween: 20,
+				centeredSlides: false,
+			},
+			992: {
+				slidesPerView: 3,
+				spaceBetween: 24,
+				centeredSlides: false,
+			},
+			1200: {
+				slidesPerView: 4,
+				spaceBetween: 24,
+				centeredSlides: false,
+			},
+			1400: {
+				slidesPerView: 5,
+				spaceBetween: 24,
+				centeredSlides: false,
 			},
 		},
 	});
@@ -220,25 +262,26 @@
 	});
 	// Brand slider area end here ***
 
-	// Testimonial two slider area start here ***
+	// Testimonial slider area start here ***
 	var swiper = new Swiper(".testimonial__slider", {
-		loop: "true",
-		spaceBetween: 20,
-		speed: 500,
+		loop: true,
+		spaceBetween: 24,
+		speed: 650,
 		autoplay: {
-			delay: 4000,
+			delay: 5000,
 			disableOnInteraction: false,
+			pauseOnMouseEnter: true,
 		},
-		// pagination: {
-		// 	el: ".testimonial-two__dot",
-		// 	clickable: true,
-		// },
+		pagination: {
+			el: ".testimonial__dot",
+			clickable: true,
+		},
 		navigation: {
 			nextEl: ".testimonial__arry-next",
 			prevEl: ".testimonial__arry-prev",
 		},
 	});
-	// Testimonial two slider area end here ***
+	// Testimonial slider area end here ***
 
 	// Blog slider area start here ***
 	var swiper = new Swiper(".blog__slider", {

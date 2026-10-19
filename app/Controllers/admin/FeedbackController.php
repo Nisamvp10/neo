@@ -38,12 +38,10 @@ class FeedbackController extends Controller {
         $selectedImage = $this->request->getPost('selected_image');
 
         if ($file && $file->isValid() && !$file->hasMoved()) {
-            // Upload new image
             $upload = json_decode($this->imgUploader->uploadimg($file, 'feedback'), true);
-            $imagePath = ($upload['status'] == true ? base_url($upload['file']) : '');
+            $imagePath = ($upload['status'] == true ? $upload['file'] : '');
         } else {
-            // Keep old image if no new upload
-            $imagePath = $selectedImage;
+            $imagePath = str_replace(base_url(),'',$selectedImage);
         }
 
         $id = decryptor($this->request->getPost('itmId'));
@@ -95,6 +93,9 @@ class FeedbackController extends Controller {
             $status = true;
             foreach($data as &$key) {
                $key['encrypted_id'] = encryptor($key['id']);
+               $key['profile'] = !empty($key['profile']) 
+                ? base_url($key['profile'])
+                : base_url('uploads/default.png');
             }
             $result = $data;
         }else{
@@ -106,7 +107,7 @@ class FeedbackController extends Controller {
         $data = $this->feedbackModel->select('id,profile,designation,note,username')->where(['id' => decryptor($id)])->first();
         if ($data) {
             $data['image'] = !empty($data['profile']) 
-                ? $data['profile']
+                ? base_url($data['profile'])
                 : base_url('uploads/default.png');
             return $this->response->setJSON($data);
         }
