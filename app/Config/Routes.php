@@ -297,3 +297,4 @@ $routes->get('promo','CommonController::promo');
 //collection
 $routes->get('collections/(:any)','CollectionsController::index/$1');
 $routes->get('for-business','BusinessController::index');
+//$routes->get('collections/category/neon-sign','CollectionsController::neonSign');

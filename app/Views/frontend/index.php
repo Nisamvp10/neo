@@ -185,39 +185,8 @@
     <!-- Premium Products Showcase Section End -->
 
         <!-- Category area start here -->
-        <section class="category-area pt-5 pb-5 bg-light-dark sec-w">
-            <div class="container">
-                <div class="sub-title wow fadeInUp text-center mb-65" data-wow-delay=".1s">
-                    <h3><span class="title-icon"></span> our top categories <span class="title-icon"></span>
-                    </h3>
-                </div>
-                <div class="swiper category__slider">
-                    <div class="swiper-wrapper">
-                        <?php
-                        $mainCate = services();
-                        if(!empty($mainCate)) {
-                            foreach($mainCate as $categories) {
-                                ?>
-                                   <div class="swiper-slide">
-                                        <div class="category__item text-center main-border">
-                                            <a href="<?=base_url('collections/').$categories['slug'];?>" class="category__image d-block">
-                                                <img src="<?=validImg($categories['cate_image'])?>" alt="image">
-                                                <div class="category-icon">
-                                                    <img src="<?=validImg($categories['cate_image'])?>" alt="icon">
-                                                </div>
-                                            </a>
-                                            <h4 class="mt-30"><a href="#"><?=$categories['category'];?> </a></h4>
-                                        </div>
-                                    </div>
-                                    
-                                <?php
-                            }
-                        }?>
-                     
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- call section categories from section/categories.php -->
+        <?= view('frontend/sections/categories'); ?>
         <!-- Category area end here -->
 
         <!-- Ad banner area start here -->
@@ -270,27 +239,60 @@
 
                                     $priceData = findProductPrice($row->id);
                             ?>
-                                        <div class="col-xxl-3 col-xl-4 col-md-6">
-                                            <div class="product__item bor main-border">
-                                                <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                                                <a href="<?= base_url().'product-details/'.$row->slug;?>" class="product__image pt-20 d-block">
-                                                    <img class="font-image" src="<?=validImg($row->product_image)?>" alt="image">
-                                                    <img class="back-image" src="<?=validImg($row->product_image)?>" alt="image">
+                                        <div class="col-xxl-3 col-xl-4 col-md-6 d-flex">
+                                            <div class="premium-product-card w-100">
+                                                <div class="card-badges">
+                                                    <?php 
+                                                        $disc = 0;
+                                                        if (!empty($priceData['price']) && !empty($priceData['salesPrice']) && $priceData['price'] > $priceData['salesPrice']) {
+                                                            $disc = round((($priceData['price'] - $priceData['salesPrice']) / $priceData['price']) * 100);
+                                                        }
+                                                    ?>
+                                                    <?php if ($disc > 0): ?>
+                                                        <span class="badge-discount-pill">-<?= $disc ?>%</span>
+                                                    <?php else: ?>
+                                                        <span class="badge-premium-pill">
+                                                            <i class="fa-solid fa-bolt"></i> HOT
+                                                        </span>
+                                                    <?php endif; ?>
+                                                </div>
+
+                                                <a href="#0" class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist">
+                                                    <i class="fa-regular fa-heart"></i>
                                                 </a>
-                                                <div class="product__content">
-                                                    <h4 class="mb-15"><a class="primary-hover" href="<?= base_url().'product-details/'.$row->slug;?>"><?=$row->product_title?></a></h4>
-                                                    <del><?=money_format_custom($priceData['price'])?></del><span class="primary-color ml-10"><?=money_format_custom($priceData['salesPrice'])?></span>
-                                                    <div class="star mt-20">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
+
+                                                <a href="<?= base_url().'product-details/'.$row->slug;?>" class="premium-card-image-wrap">
+                                                    <img src="<?=validImg($row->product_image)?>" alt="<?=esc($row->product_title)?>" class="premium-card-img">
+                                                </a>
+
+                                                <div class="premium-card-body">
+                                                    <h4 class="premium-card-title">
+                                                        <a href="<?= base_url().'product-details/'.$row->slug;?>" title="<?=esc($row->product_title)?>"><?=esc($row->product_title)?></a>
+                                                    </h4>
+
+                                                    <div class="premium-price-box">
+                                                        <span class="premium-sales-price"><?=money_format_custom($priceData['salesPrice'])?></span>
+                                                        <?php if (!empty($priceData['price']) && $priceData['price'] > $priceData['salesPrice']): ?>
+                                                            <del class="premium-regular-price"><?=money_format_custom($priceData['price'])?></del>
+                                                        <?php endif; ?>
                                                     </div>
 
+                                                    <div class="premium-card-rating">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <span class="rating-text">(5.0)</span>
+                                                    </div>
+
+                                                    <div class="premium-card-action">
+                                                        <a class="btn-card-details" href="<?= base_url().'product-details/'.$row->slug;?>">
+                                                            <span>View Details</span>
+                                                            <i class="fa-regular fa-eye"></i>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <a class="product__cart d-block bor-top" href="<?= base_url().'product-details/'.$row->slug;?>"><i class="fa-regular fa-eye me-1"></i>
-                                                    <span>View Details</span></a>
                                             </div>
                                         </div>
 

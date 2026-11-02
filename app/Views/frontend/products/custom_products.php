@@ -9,52 +9,83 @@
            if($i % $cols == 0){
             //$html .= '<div class="row g-4">';
            }
-           $productPrice = $product->price;
+           $productPrice = $product->price ?? 0;
            $defaultprice = $product->extra_price ?? 0;
-           $lowSalePrice =  $productPrice+$defaultprice;
-           $sellingPrice = 0;
-           $discountPercent = 0;
-           $comparePrice = $product->compare_price ?? 0;//discount calculate in percentage
-           if($productPrice>0){
-                $discountPercent = ($productPrice / 100) * $comparePrice;
-                $sellingPrice = $productPrice - $discountPercent;
-           }else{
-            $sellingPrice = $lowSalePrice;
+           $lowSalePrice = $productPrice + $defaultprice;
+           $sellingPrice = $lowSalePrice;
+           $comparePrice = $product->compare_price ?? 0;
+           $priceOfferType = $product->price_offer_type ?? 2;
+           $discountBadge = '';
+
+           if ($lowSalePrice > 0 && $comparePrice > 0) {
+               if ($priceOfferType == 1) {
+                   // Flat discount in Rs
+                   $discountAmount = $comparePrice;
+                   $sellingPrice = max(0, $lowSalePrice - $discountAmount);
+                   $discountBadge = '-' . money_format_custom($comparePrice);
+               } else {
+                   // Percentage discount (%)
+                   $discountAmount = ($lowSalePrice / 100) * $comparePrice;
+                   $sellingPrice = max(0, $lowSalePrice - $discountAmount);
+                   $discountBadge = '-' . round($comparePrice) . '%';
+               }
            }
-
-
        ?>
-            <div class="col-xxl-3 col-xl-4 col-md-6">
-                <div class="w-100">
-                    <div class="product__item bor">
-                        <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
-                        <a href="<?= base_url().'product-details/'.$product->slug;?>" class="product__image pt-20 d-block">
-                            <img class="font-image" src="<?=validImg($product->product_image ?? '');?>" alt="image">
-                            <img class="back-image" src="<?=validImg($product->product_image ?? '');?>" alt="image">
+
+         <div class="col-xxl-3 col-xl-4 col-md-6 d-flex">
+            <div class="premium-product-card w-100">
+                <div class="card-badges">
+                    <?php if (!empty($discountBadge) && $lowSalePrice > $sellingPrice): ?>
+                        <span class="badge-discount-pill"><?= $discountBadge ?></span>
+                    <?php else: ?>
+                        <span class="badge-premium-pill">
+                            <i class="fa-solid fa-bolt"></i> HOT
+                        </span>
+                    <?php endif; ?>
+                </div>
+
+                <a href="#0" class="wishlist" title="Add to Wishlist" aria-label="Add to Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+
+                <a href="<?= base_url().'product-details/'.$product->slug;?>" class="premium-card-image-wrap">
+                    <img src="<?=validImg($product->product_image)?>" alt="<?=esc($product->product_title)?>" class="premium-card-img">
+                </a>
+
+                <div class="premium-card-body">
+                    <h4 class="premium-card-title">
+                        <a href="<?= base_url().'product-details/'.$product->slug;?>" title="<?=esc($product->product_title)?>"><?=esc($product->product_title)?></a>
+                    </h4>
+
+                    <div class="premium-price-box">
+                        <span class="premium-sales-price"><?=money_format_custom($sellingPrice)?></span>
+                        <?php if ($lowSalePrice > $sellingPrice): ?>
+                            <del class="premium-regular-price"><?=money_format_custom($lowSalePrice)?></del>
+                        <?php endif; ?>
+                    </div>
+
+                    <div class="premium-card-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="rating-text">(5.0)</span>
+                    </div>
+
+                    <div class="premium-card-action">
+                        <a class="btn-card-details" href="<?= base_url().'product-details/'.$product->slug;?>">
+                            <span>View Details</span>
+                            <i class="fa-regular fa-eye"></i>
                         </a>
-                        <div class="product__content">
-                            <h4 class="mb-15"><a class="primary-hover" href="<?= base_url().'product-details/'.$product->slug;?>"><?= $product->product_title ?? '';?></a></h4>
-                            <?php if($product->product_type == 1):?>
-                          <div class="d-flex align-items-center justify-content-between">
-                           <?=($discountPercent > 0 ?  '<del>'.money_format_custom($lowSalePrice).'</del>' : '' );?>
-                              <span class="primary-color ml-10"><?=money_format_custom($sellingPrice);?></span>
-                          </div>
-                          <?php endif;?>
-                            <div class="star mt-20">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                        <a class="product__cart d-block bor-top "  href="<?= base_url().'product-details/'.$product->slug;?>"><i class="fa-regular fa-eye me-1"></i>
-                        <span>View Details</span></a>
                     </div>
                 </div>
+            </div>
         </div>
                                         
-            <?php 
+          
+                                        
+    <?php 
 
         if($i % $cols == $cols - 1){
           //  $html .= '</div>';
@@ -62,7 +93,7 @@
         $i++;
          }
     }else{
-        $html = "<p>No Products Found</p>"; 
+        echo '<div class="col-12 text-center py-5"><p class="text-white-50 fs-5">No Products Found</p></div>'; 
     }
 ?>
 </div>

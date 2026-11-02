@@ -151,6 +151,9 @@ class CategoryController extends Controller{
         {
             $branch = $this->categoryModel->find($id); 
             if($branch){
+                if($branch['status'] == 1){
+                    return $this->response->setJSON(['success' => false , 'message' => 'Category cannot be deleted!']);
+                }
                 //check assigned any staff and appoint ment in the branch 
                 if( $this->categoryModel->update($id,['is_active'=>0])){
                     $validSuccess = true;

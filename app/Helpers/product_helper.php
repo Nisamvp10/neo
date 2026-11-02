@@ -7,6 +7,9 @@ if(!function_exists('getCollections')){
     function getCollections($slug){
         $productManageModel = new ProductManageModel();
         $categoryModel = new CategoryModel();
+        if($slug == "all"){
+            return $productManageModel->where(['product_status' => 1])->get()->getResult();
+        }
         $category = $productManageModel->getproductBycategory($slug);
         return $category;
     }

@@ -83,12 +83,12 @@
                     </li>
                  
                     <li>
-                        <a href="#">Neon Sign</a>
+                        <a href="<?=base_url('collections/category/neon-sign')?>">Neon Sign</a>
                     </li>
                      
                     <li>
                         <!-- <a href="#">Vibro Series</a> -->
-                         <a href="#">Best Seller</a>
+                         <a href="<?=base_url('collections/all')?>">Best Seller</a>
                     </li>
                      
                     <li>

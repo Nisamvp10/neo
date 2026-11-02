@@ -7206,14 +7206,19 @@ textarea.form-control-neon {
 /* Card Image */
 .premium-card-image-wrap {
   position: relative;
-  display: block;
-  padding: 30px 15px 15px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  padding: 20px 15px;
   text-align: center;
   overflow: hidden;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 255, 255, 0.05) 0%, transparent 70%);
+  border-radius: 12px;
 }
 
 .premium-card-img {
-  max-height: 200px;
+  max-height: 180px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
@@ -7235,10 +7240,11 @@ textarea.form-control-neon {
 }
 
 .premium-card-title {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 1.4;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  min-height: 42px;
 }
 
 .premium-card-title a {
@@ -7258,9 +7264,9 @@ textarea.form-control-neon {
 
 .premium-price-box {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .premium-sales-price {
@@ -7271,7 +7277,7 @@ textarea.form-control-neon {
 
 .premium-regular-price {
   color: #888888;
-  font-size: 14px;
+  font-size: 13px;
   text-decoration: line-through;
 }
 
@@ -7281,7 +7287,7 @@ textarea.form-control-neon {
   gap: 4px;
   font-size: 12px;
   color: #ffb703;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .premium-card-rating .rating-text {
@@ -7310,8 +7316,13 @@ textarea.form-control-neon {
   color: #ffffff !important;
   font-size: 13px;
   font-weight: 600;
+  letter-spacing: 0.3px;
   transition: all 0.3s ease;
   text-decoration: none;
+}
+
+.btn-card-details i {
+  transition: transform 0.3s ease;
 }
 
 .btn-card-details:hover {
@@ -7319,6 +7330,10 @@ textarea.form-control-neon {
   border-color: var(--primary-color, #00ffff);
   color: #000000 !important;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+}
+
+.btn-card-details:hover i {
+  transform: translateX(3px);
 }
 
 /* Swiper Dots */
