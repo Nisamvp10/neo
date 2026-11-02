@@ -8284,4 +8284,25 @@ textarea.form-control-neon {
   .service-promo-content h3 {
     font-size: 20px;
   }
+
+  .hero-slide-content {
+    padding-left: 45px;
+  }
+
+  .hero-btn-primary {
+
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 12px;
+
+  }
+
+  .hero-btn-secondary {
+
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 12px;
+
+  }
 }
