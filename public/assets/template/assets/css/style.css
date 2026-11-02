@@ -7210,7 +7210,7 @@ textarea.form-control-neon {
   align-items: center;
   justify-content: center;
   height: 220px;
-  padding: 20px 15px;
+  /* padding: 20px 15px; */
   text-align: center;
   overflow: hidden;
   background: radial-gradient(circle at 50% 50%, rgba(0, 255, 255, 0.05) 0%, transparent 70%);
@@ -7218,7 +7218,7 @@ textarea.form-control-neon {
 }
 
 .premium-card-img {
-  max-height: 180px;
+
   width: auto;
   max-width: 100%;
   object-fit: contain;
@@ -8260,11 +8260,13 @@ textarea.form-control-neon {
   .testimonial-box {
     padding: 28px 22px;
   }
+
   .testi-avatar-portal {
     width: 140px;
     height: 140px;
     margin-top: 20px;
   }
+
   .service-promo-card {
     padding: 30px 24px;
   }
@@ -8274,9 +8276,11 @@ textarea.form-control-neon {
   .testimonial__head-wrp {
     padding: 20px 20px !important;
   }
+
   .testi-quote-text {
     font-size: 15px;
   }
+
   .service-promo-content h3 {
     font-size: 20px;
   }
