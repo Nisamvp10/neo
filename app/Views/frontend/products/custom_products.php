@@ -10,8 +10,12 @@
             //$html .= '<div class="row g-4">';
            }
            $productPrice = $product->price ?? 0;
-           $defaultprice = $product->extra_price ?? 0;
-           $lowSalePrice = $productPrice + $defaultprice;
+           $sizePrice    = $product->extra_price ?? 0;
+           $fontPrice    = $product->font_price ?? 0;
+           $colorPrice   = $product->color_price ?? 0;
+
+           // Customized default price = base + lowest size + lowest font + lowest color
+           $lowSalePrice = $productPrice + $sizePrice + $fontPrice + $colorPrice;
            $sellingPrice = $lowSalePrice;
            $comparePrice = $product->compare_price ?? 0;
            $priceOfferType = $product->price_offer_type ?? 2;

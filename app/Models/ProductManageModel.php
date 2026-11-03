@@ -94,8 +94,14 @@ class ProductManageModel extends Model{
             ps.size_name,
             ps.width,
             ps.height,
-            ps.extra_price,
-            ps.multiplier
+            ps.extra_price as extra_price,
+            ps.multiplier,
+
+            pf.font_name,
+            pf.base_price as font_price,
+
+            pc.color_name,
+            pc.extra_price as color_price
         ');
 
         $builder->join('categories as c', 'c.id = pm.category_id', 'left');
@@ -116,9 +122,42 @@ class ProductManageModel extends Model{
             'left'
         );
 
+        // JOIN LOWEST PRICE FONT
+        $builder->join(
+            '(SELECT product_id, MIN(base_price) as min_font_price 
+            FROM product_fonts 
+            GROUP BY product_id) as lowest_font',
+            'lowest_font.product_id = pm.id',
+            'left'
+        );
+
+        $builder->join(
+            'product_fonts as pf',
+            'pf.product_id = pm.id 
+            AND pf.base_price = lowest_font.min_font_price',
+            'left'
+        );
+
+        // JOIN LOWEST PRICE COLOR
+        $builder->join(
+            '(SELECT product_id, MIN(extra_price) as min_color_price 
+            FROM product_colors 
+            GROUP BY product_id) as lowest_color',
+            'lowest_color.product_id = pm.id',
+            'left'
+        );
+
+        $builder->join(
+            'product_colors as pc',
+            'pc.product_id = pm.id 
+            AND pc.extra_price = lowest_color.min_color_price',
+            'left'
+        );
+
         $builder->where('c.slug', $slug);
 
-        //$builder->limit(10);
+        // Prevent duplicate rows when multiple sizes/fonts/colors share the same min price
+        $builder->groupBy('pm.id');
 
         return $builder->get()->getResult();
     }
