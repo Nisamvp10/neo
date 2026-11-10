@@ -77,3 +77,14 @@
         </svg>
     </div>
     <!-- Back to top area end here -->
+
+    <!-- Floating Quick Day / Dark Mode Switcher -->
+    <div class="floating-theme-switch">
+        <button class="floating-theme-btn js-theme-toggle" type="button" aria-label="Toggle Day and Dark Mode" title="Toggle Day / Dark Mode">
+            <span class="floating-icon-wrap">
+                <i class="fa-solid fa-moon icon-dark"></i>
+                <i class="fa-solid fa-sun icon-light"></i>
+            </span>
+            <span class="floating-theme-tooltip">Day Mode</span>
+        </button>
+    </div>

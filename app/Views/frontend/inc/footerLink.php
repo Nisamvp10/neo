@@ -21,6 +21,8 @@
       <script src="<?=base_url('public/assets/template/');?>assets/js/jquery.waypoints.js"></script>
       <!-- Script Js -->
       <script src="<?=base_url('public/assets/template/');?>assets/js/script.js"></script>
+      <!-- Day / Dark Theme Mode Manager -->
+      <script src="<?=base_url('public/assets/template/');?>assets/js/theme.js"></script>
 
 
 

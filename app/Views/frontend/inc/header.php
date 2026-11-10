@@ -41,6 +41,18 @@
                             0.00
                         </span>
                     </div>
+                    <!-- Day / Dark Mode Toggle Switch -->
+                    <div class="theme-switch-container d-flex align-items-center">
+                        <button class="theme-toggle-btn js-theme-toggle" type="button" aria-label="Toggle Day and Dark Mode" title="Toggle Day / Dark Mode">
+                            <span class="theme-toggle-track">
+                                <span class="theme-toggle-thumb">
+                                    <i class="fa-solid fa-moon icon-dark"></i>
+                                    <i class="fa-solid fa-sun icon-light"></i>
+                                </span>
+                            </span>
+                            <span class="theme-mode-text d-none d-xl-inline-block">Dark</span>
+                        </button>
+                    </div>
                     <div class="flag__wrap d-none">
                         <div class="flag">
                             <img src="<?=base_url('public/assets/template/');?>assets/images/us.png" alt="flag">
@@ -68,10 +80,16 @@
      <header class="header-section">
         <div class="container">
             <div class="header-wrapper pl-65">
-                <div class="header-bar d-lg-none">
+                <div class="d-flex align-items-center gap-3 d-lg-none">
+                    <button class="theme-toggle-btn-compact js-theme-toggle" type="button" aria-label="Toggle Theme" title="Toggle Day / Dark Mode">
+                        <i class="fa-solid fa-moon icon-dark"></i>
+                        <i class="fa-solid fa-sun icon-light"></i>
+                    </button>
+                    <div class="header-bar">
                     <span></span>
                     <span></span>
                     <span></span>
+                </div>
                 </div>
                 <ul class="main-menu">
                     <li class="d-none d-lg-block"><button id="openButton" class="side-bar-btn"><i
@@ -122,9 +140,22 @@
         <div class="logo mb-30">
             <img src="<?=base_url('public/assets/template/')?>assets/images/logo.png" alt="logo">
         </div>
+        <!-- Sidebar Theme Switcher -->
+        <div class="sidebar-theme-switch mb-30 p-3 rounded d-flex align-items-center justify-content-between">
+            <span class="theme-switch-title"><i class="fa-solid fa-circle-half-stroke me-2"></i>Theme Mode</span>
+            <button class="theme-toggle-btn js-theme-toggle" type="button" aria-label="Toggle Theme">
+                <span class="theme-toggle-track">
+                    <span class="theme-toggle-thumb">
+                        <i class="fa-solid fa-moon icon-dark"></i>
+                        <i class="fa-solid fa-sun icon-light"></i>
+                    </span>
+                </span>
+                <span class="theme-mode-text">Dark</span>
+            </button>
+        </div>
         <p class="text-justify">All our products are handmade in India with flawless finishing
 
-That enables us to create 100% customized Neon Signs as per your preference. Just reach out to us and we’ll take care of it!/p>
+That enables us to create 100% customized Neon Signs as per your preference. Just reach out to us and we’ll take care of it!</p>
         <ul class="info py-4 mt-65 bor-top bor-bottom">
             <li><i class="fa-solid primary-color fa-location-dot"></i> <a href="#0">info@neonstories.com</a>
             </li>
