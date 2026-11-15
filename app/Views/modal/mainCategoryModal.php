@@ -2,7 +2,7 @@
 
     <!-- Banner Modal -->
 <div id="categoryModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 wrapModal">
-  <div class="bg-white rounded-lg shadow-xl w-full max-w-4xl max-h-[100vh] min-h-[80vh] overflow-y-auto">
+  <div class="bg-white rounded-lg shadow-xl w-full max-w-4xl max-h-[80vh] min-h-[80vh] overflow-y-scroll">
     <div class="flex items-center justify-between p-6 border-b border-gray-200">
       <h2 class="text-2xl font-bold text-gray-900 head capitalize"></h2>
       <button data-close="categoryModal" class="p-2 text-gray-400 hover:text-gray-600 rounded-lg hover:bg-gray-100 transition-colors">
